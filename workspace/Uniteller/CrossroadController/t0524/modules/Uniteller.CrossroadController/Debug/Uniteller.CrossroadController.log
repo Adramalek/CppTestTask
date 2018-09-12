@@ -1,53 +1,88 @@
-﻿Build started 12.09.2018 16:46:56.
-     1>Project "C:\Users\User\Downloads\TestWorkspace_Win32\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\Uniteller.CrossroadController.vcxproj" on node 2 (Build target(s)).
+﻿Build started 12.09.2018 17:38:44.
+     1>Project "C:\Users\User\CppTestTask\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\Uniteller.CrossroadController.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft_Visual_Studio_13\VC\bin\CL.exe /c /IC:\Users\User\Downloads\TestWorkspace_Win32\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\\..\include /IC:\Users\User\Downloads\TestWorkspace_Win32\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\ /IC:\Users\User\Downloads\TestWorkspace_Win32\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\\..\..\include /IC:\Users\User\Downloads\TestWorkspace_Win32\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\\..\..\references /ZI /nologo /W3 /WX- /sdl- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D UNITELLER_FRAMEWORK_KERNEL_SYSTEM_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt machine.cpp
+         C:\Program Files (x86)\Microsoft_Visual_Studio_13\VC\bin\CL.exe /c /IC:\Users\User\CppTestTask\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\\..\include /IC:\Users\User\CppTestTask\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\ /IC:\Users\User\CppTestTask\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\\..\..\include /IC:\Users\User\CppTestTask\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\\..\..\references /ZI /nologo /W3 /WX- /sdl- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D UNITELLER_FRAMEWORK_KERNEL_SYSTEM_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\references\kernel\Utils.cpp dllmain.cpp machine.cpp Uniteller.CrossroadController.cpp ..\include\watermark.cpp
+         watermark.cpp
+         Uniteller.CrossroadController.cpp
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(103): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(104): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(105): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(116): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(117): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(118): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(119): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(130): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(131): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(142): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(153): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(164): warning C4002: too many actual parameters for macro 'ENUM'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(165): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(166): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(177): warning C4002: too many actual parameters for macro 'ENUM'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(188): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(199): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(200): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(201): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(212): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(223): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(224): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(235): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(246): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(247): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(258): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(259): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(260): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(271): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(282): warning C4002: too many actual parameters for macro 'ARGUMENT'
          machine.cpp
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(103): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(104): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(105): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(116): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(117): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(118): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(119): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(130): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(131): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(142): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(153): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(164): warning C4002: too many actual parameters for macro 'ENUM'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(165): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(166): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(177): warning C4002: too many actual parameters for macro 'ENUM'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(188): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(199): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(200): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(201): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(212): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(223): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(224): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(235): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(246): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(247): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(258): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(259): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(260): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(271): warning C4002: too many actual parameters for macro 'ARGUMENT'
-     1>c:\users\user\downloads\testworkspace_win32\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(282): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(103): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(104): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(105): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(116): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(117): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(118): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(119): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(130): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(131): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(142): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(153): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(164): warning C4002: too many actual parameters for macro 'ENUM'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(165): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(166): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(177): warning C4002: too many actual parameters for macro 'ENUM'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(188): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(199): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(200): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(201): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(212): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(223): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(224): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(235): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(246): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(247): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(258): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(259): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(260): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(271): warning C4002: too many actual parameters for macro 'ARGUMENT'
+     1>c:\users\user\cpptesttask\workspace\uniteller\crossroadcontroller\t0524\references\uniteller.framework.kernel.host.h(282): warning C4002: too many actual parameters for macro 'ARGUMENT'
+         dllmain.cpp
+         Utils.cpp
+         Generating Code...
        ResourceCompile:
          C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\Uniteller.CrossroadController.Metadata.res" Uniteller.CrossroadController.Metadata.rc 
          C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\Uniteller.CrossroadController.res" Uniteller.CrossroadController.rc 
        Link:
-         C:\Program Files (x86)\Microsoft_Visual_Studio_13\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\User\Downloads\TestWorkspace_Win32\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\Debug\Uniteller.CrossroadController.dll" /INCREMENTAL /NOLOGO /LIBPATH:X:\myworkspace\Uniteller\Framework\Kernel\1.0.0\include\libraries kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\User\Downloads\TestWorkspace_Win32\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\Debug\Uniteller.CrossroadController.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\User\Downloads\TestWorkspace_Win32\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\Debug\Uniteller.CrossroadController.lib" /MACHINE:X86 /DLL Debug\Uniteller.CrossroadController.Metadata.res
+         C:\Program Files (x86)\Microsoft_Visual_Studio_13\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\User\CppTestTask\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\Debug\Uniteller.CrossroadController.dll" /INCREMENTAL /NOLOGO /LIBPATH:X:\myworkspace\Uniteller\Framework\Kernel\1.0.0\include\libraries kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\User\CppTestTask\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\Debug\Uniteller.CrossroadController.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\User\CppTestTask\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\Debug\Uniteller.CrossroadController.lib" /MACHINE:X86 /DLL Debug\Uniteller.CrossroadController.Metadata.res
          Debug\Uniteller.CrossroadController.res
          Debug\Utils.obj
          Debug\dllmain.obj
          Debug\machine.obj
          Debug\Uniteller.CrossroadController.obj
          Debug\watermark.obj
-            Creating library C:\Users\User\Downloads\TestWorkspace_Win32\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\Debug\Uniteller.CrossroadController.lib and object C:\Users\User\Downloads\TestWorkspace_Win32\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\Debug\Uniteller.CrossroadController.exp
-         Uniteller.CrossroadController.vcxproj -> C:\Users\User\Downloads\TestWorkspace_Win32\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\Debug\Uniteller.CrossroadController.dll
-     1>Done Building Project "C:\Users\User\Downloads\TestWorkspace_Win32\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\Uniteller.CrossroadController.vcxproj" (Build target(s)).
+            Creating library C:\Users\User\CppTestTask\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\Debug\Uniteller.CrossroadController.lib and object C:\Users\User\CppTestTask\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\Debug\Uniteller.CrossroadController.exp
+         Uniteller.CrossroadController.vcxproj -> C:\Users\User\CppTestTask\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\Debug\Uniteller.CrossroadController.dll
+     1>Done Building Project "C:\Users\User\CppTestTask\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\Uniteller.CrossroadController.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.81
+Time Elapsed 00:00:09.63

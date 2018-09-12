@@ -136,7 +136,7 @@ namespace Uniteller
 			END_ENDPOINTS()
 
 		protected: // Обработчики событий автомата
-			void MachineInitErrorHandlerSystem(IMessage * message);
+			//void MachineInitErrorHandlerSystem(IMessage * message);
 			DECLARE_HANDLER(KernelStartHandler, Framework::Kernel::Protocol::G1::Start);
 			DECLARE_HANDLER(StopHandler, Framework::Kernel::Protocol::G1::Stop);
 			DECLARE_HANDLER(ShutdownHandler, Uniteller::MainLogic::Protocol::G1::Shutdown);
