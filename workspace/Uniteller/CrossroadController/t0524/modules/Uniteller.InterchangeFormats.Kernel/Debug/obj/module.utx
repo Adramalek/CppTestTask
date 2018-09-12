@@ -1,0 +1,8 @@
+<root> : Uniteller\Images
+Uniteller.InterchangeFormats.Kernel
+  Version : 1.0.0
+  Generations : {1}
+  Module : Uniteller.InterchangeFormats.Kernel.dll
+  Dependencies
+  Description : Версия ядра для Linux
+  Goal : t0524

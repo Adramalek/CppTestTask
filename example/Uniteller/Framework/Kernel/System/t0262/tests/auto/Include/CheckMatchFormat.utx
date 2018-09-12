@@ -1,0 +1,27 @@
+Goal:
+  Обеспечивает проверку работы команды MatchFormat (позитивный сценарий)
+Procedure: CheckMatchFormat
+  Unit    | Тестируемый модуль
+  Machine : "System" | Имя машины состояний Kernel.System
+  OldState | Старое состояние машины
+  NewState | Старое состояние машины
+  Event : Kernel.System.MatchFormat | Событие, активировавшее StateChange
+  Source | Исходная строка
+  Format | Формат сопоставления
+  MatchResult | Успешно ли сравнение
+  Result | Список строк, которые успешно прошли сопоставление с форматом
+Script  ; Тело процедуры
+  1 : Send <Unit>
+    Kernel.System.MatchFormat : 1
+      Source : <Source>
+      Format : <Format>
+  2 : Receive <Unit>
+    Kernel.System.MatchFormatAnswer : 1
+      MatchResult : <MatchResult>
+      Result : <Result>
+  3 : Receive <Unit>
+    Kernel.StateChanged : 1     ; Событие, присылаемое в момент изменения состояния конечного автомата
+      MachineName : <Machine>   ; - Имя конечного автомата перешедшего в новое состояние
+      OldState : <OldState>     ; - Старое состояние машины
+      NewState : <NewState>     ; - Новое состояние машины
+      Event : <Event> ; - Событие, активировавшее переход

@@ -1,0 +1,27 @@
+Start logging action: Converting
+File: C:\Users\User\Downloads\TestWorkspace_Win32\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.InterchangeFormats.MainLogic\module.utx
+Parameter: 
+
+[MEGALITH] Компилятор HCL [Code Warrior]
+Версия: 20161117141548
+© 2000-2016, Megalith Softworks
+
+Анализ параметров командной строки:
+Processing protocol: C:\Users\User\Downloads\TestWorkspace_Win32\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.InterchangeFormats.MainLogic\Debug\obj\module.utx
+Conversion completed.
+Starting : C:\Users\User\Downloads\TestWorkspace_Win32\release\Uniteller.Framework.Kernel.ConsoleHost.exe
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+
+
+[HOST] Loading core..[15:55:29.759]
+[HOST] Starting application..[15:55:29.764]
+[HOST] Application started successfully.[15:55:29.777]
+[SCHEMELOADER] Uniteller.Framework.Kernel.FileSystem -> 6
+[SCHEMELOADER] Uniteller.Framework.UtxTransformer -> 7
+[SCHEMELOADER] Схема загружена и активирована
+[SCHEMELOADER] Закрытие приложения
+[HOST] Unloading core..[15:55:30.030]
+[HOST] Exit with code 0[15:55:30.050]
+

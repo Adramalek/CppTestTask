@@ -1,0 +1,31 @@
+Goal:
+  Обеспечивает проверку работы команды UnpackFirst (позитивный сценарий)
+Procedure: CheckUnpackFirst
+  Unit    | Тестируемый модуль
+  Machine : "System" | Имя машины состояний Kernel.System
+  OldState | Старое состояние машины
+  NewState | Старое состояние машины
+  Event : Kernel.System.UnpackFirst | Событие, активировавшее StateChange
+  Source | Строка для разбиения
+  Delim | Символ-разделитель
+  Mode | Режим работы команды
+  Status | Флаг выполнения команды UnpackFirst
+  Head | Головная часть строки
+  Tail | Хвостовая часть строки
+Script  ; Тело процедуры
+  1 : Send <Unit>
+    Kernel.System.UnpackFirst : 1
+      Source : <Source>
+      Delim : <Delim>
+      Mode : <Mode>
+  2 : Receive <Unit>
+    Kernel.System.UnpackFirstAnswer : 1
+      Status : <Status>
+      Head : <Head>
+      Tail : <Tail>
+  3 : Receive <Unit>
+    Kernel.StateChanged : 1     ; Событие, присылаемое в момент изменения состояния конечного автомата
+      MachineName : <Machine>   ; - Имя конечного автомата перешедшего в новое состояние
+      OldState : <OldState>     ; - Старое состояние машины
+      NewState : <NewState>     ; - Новое состояние машины
+      Event : <Event> ; - Событие, активировавшее переход

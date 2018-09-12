@@ -1,0 +1,23 @@
+Goal:
+  Обеспечивает проверку работы команды Trim (позитивный сценарий)
+Procedure: CheckTrim
+  Unit    | Тестируемый модуль
+  Machine : "System" | Имя машины состояний Kernel.System
+  OldState | Старое состояние машины
+  NewState | Старое состояние машины
+  Event : Kernel.System.Trim | Событие, активировавшее StateChange
+  Source | Исходная строка
+  Result | Результат выполнения команды Trim
+Script  ; Тело процедуры
+  1 : Send <Unit>
+    Kernel.System.Trim : 1
+      Source : <Source>
+  2 : Receive <Unit>
+    Kernel.System.TrimAnswer : 1
+      Result : <Result>
+  3 : Receive <Unit>
+    Kernel.StateChanged : 1     ; Событие, присылаемое в момент изменения состояния конечного автомата
+      MachineName : <Machine>   ; - Имя конечного автомата перешедшего в новое состояние
+      OldState : <OldState>     ; - Старое состояние машины
+      NewState : <NewState>     ; - Новое состояние машины
+      Event : <Event> ; - Событие, активировавшее переход

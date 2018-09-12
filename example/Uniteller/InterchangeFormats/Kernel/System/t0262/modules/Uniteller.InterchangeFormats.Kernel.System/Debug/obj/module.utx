@@ -1,0 +1,8 @@
+<root> : Uniteller\Images
+Uniteller.InterchangeFormats.Kernel.System
+  Version : 1.0.0
+  Generations : {1}
+  Module : Uniteller.InterchangeFormats.Kernel.System.dll
+  Dependencies
+    Uniteller.InterchangeFormats.Kernel : 1
+  Goal : t0262

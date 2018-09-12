@@ -1,0 +1,32 @@
+; Тест C01.1.02-Test-010
+Head ; Заголовок теста
+  Name: Заменить одну строку другой
+  Goal: ; Цель теста
+    Пустая строка в Source
+  References: ; Ссылки на пункты чек-листа
+    C01.1.05 ; Обычная замена подстроки
+Modules ; Модули, загружаемые для тестирования
+  unit : Uniteller.Framework.Kernel.System
+    Generation : 1
+    Protocols ; Требуем поддержку пречисленных ниже протоколов
+      Kernel.System : 1
+Datasets  ; Наборы данных
+  Default
+    Machine : [Machine]             ; Имя машины состояний
+    Source : [Strings.Value1]
+    Pattern : "Строка"
+    Value : "Текст"
+    Result : "Текст с несколькими пробелами"
+Script    ; Скрипт тестирования
+  ; Инициализация модуля и подготовка его к работе
+  10: Call <CheckReplaceAll>
+    Unit : <unit>
+    Machine : <Machine>
+    OldState : Idle
+    NewState : Idle
+    Event : <Kernel.System.ReplaceAll>
+    Source : <Source>
+    Pattern : <Pattern>
+    Value : <Value>
+    Result : <Result>
+

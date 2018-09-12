@@ -1,0 +1,10 @@
+;учебный скрипт дл€ изучени€ команды Receive
+Modules ; —писок модулей, которые будут загружены дл€ тестировани€
+  Module1 : Uniteller.Framework.Kernel.Tester.Responder ; «агружаемый дл€ тестировани€ модуль (Responder)
+Script ; »сполн€емый скрипт
+  1 : Send <Module1> ; Ўаг первый, команда Send; адресат Module1, который мы указали в секции Modules
+    Kernel.Tester.Responder.MessageExample : 1  ; —обытие MessageExample из протокола Kernel.Tester.Responder первого поколени€
+  ; конец первого шага
+  3 : Receive <Module1> ; шаг второй - команда Receive; принимаем от Module1
+    Kernel.Tester.Responder.MessageExample : 1 ; событие MessageExample протокола Kernel.Tester.Responder первого поколени€
+; конец второго шага

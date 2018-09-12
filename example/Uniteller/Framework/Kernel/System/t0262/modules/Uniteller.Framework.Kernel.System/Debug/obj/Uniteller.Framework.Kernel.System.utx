@@ -1,0 +1,26 @@
+; Декларативное описание машины состояний модуля
+; Uniteller.Framework.Kernel.System
+; Copyright (c) Unitecsys, 2016
+;
+; Данный файл был сгенерирован автоматически! Его ручное изменение запрещено правилами
+; процесса разработки. При необходимости изменения следует исправить модель и затем повторить этап генерации декларативного описания по модели
+;
+; Описание автомата Uniteller.Framework.Kernel.System
+;
+<root>: Kernel/StateMachines
+Uniteller.Framework.Kernel.System
+  States                  ; Состояния
+    Idle
+      IsEndState  : False ; Состояние не является конечным
+      Transitions : 0     ; Переходы (без накопления событий)
+        Kernel.System.ReplaceAll : Idle
+        Kernel.System.Split : Idle
+        Kernel.System.TrimLeft : Idle
+        Kernel.System.TrimRight : Idle
+        Kernel.System.Trim : Idle
+        Kernel.System.UnpackFirst : Idle
+        Kernel.System.UnpackLast : Idle
+        Kernel.System.MatchFormat : Idle
+        Kernel.System.GetLength : Idle
+  Options                 ; Настройки машины
+    StartState : Idle

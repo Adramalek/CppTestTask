@@ -1,0 +1,8 @@
+<root> : Uniteller\Images
+Uniteller.InterchangeFormats.MainLogic
+  Description : Модуль управления светофором
+  Version : 1.0.0
+  Generations : {1}
+  Module : Uniteller.InterchangeFormats.CrossroadController.utc
+  Dependencies
+  Goal : t0524

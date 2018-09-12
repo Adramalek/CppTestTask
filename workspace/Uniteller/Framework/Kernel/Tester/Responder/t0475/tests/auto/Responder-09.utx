@@ -1,0 +1,33 @@
+;учебный скрипт для изучения команды Receive
+Modules
+  Module1 : Uniteller.Framework.Kernel.Tester.Responder
+    Generation : 2 ; явно указываем, что загружаем модуль 2-го поколения, т. к. AdvancedMode появилось во 2-м поколении 
+Script
+  1 : Send <Module1>
+    Kernel.Tester.Responder.MessageExample : 1
+  3 : Receive <Module1> ; шаг второй - команда Receive; принимаем от Module1
+    Kernel.Tester.Responder.MessageExample : 1 ; событие MessageExample протокола Kernel.Tester.Responder первого поколения
+  4 : Receive <Module1> ; принимаем от Module1
+    Kernel.StateChanged : 1 ; событие StateChanged протокола Kernel первого поколения
+      MachineName : Uniteller.Framework.Kernel.Tester.Responder ; сравниваем аргумент события MachineName с константой (Uniteller.Framework.Kernel.Tester.Responder)
+      OldState : * ; игнорируем контроль значения аргумента OldState (* - любое значение), но убеждаемся что сам аргумент в сообщении есть
+      NewState : Idle ; сравниваем значение аргумента NewState с константой (Idle)
+      Event : <Kernel.Tester.Responder.MessageExample> ; переход вызван событием Kernel.Tester.Responder.MessageExample 
+  5 : Send <Module1> ; отправляем следующую инструкцию модулю Responder
+    Kernel.Tester.Responder.SetResponderMode : 2 ; это инструкция SetResponderMode протокола Kernel.Tester.Responder 2-го поколения
+	; у неё есть параметры, но без их указания устанавливаются значения по умолчанию
+  6 : Receive <Module1>
+    Kernel.StateChanged : 1 ; принимаем сообщение StateChanged о смене состояния
+      MachineName : Uniteller.Framework.Kernel.Tester.Responder ; оставили проверку того, что сообщение пришло от Responder
+      OldState : * ; не проверяем значение старого состояния, только «смотрим» его
+      NewState : AdvancedMode ; а здесь оставили проверку того, что состояние сменилось на AdvancedMode
+      Event : <Kernel.Tester.Responder.SetResponderMode> ; переход вызван событием Kernel.Tester.Responder.SetResponderMode
+  7 : Send <Module1> ; отправляем следующую инструкцию модулю Responder
+    Kernel.Tester.Responder.Reset : 2 ; инструкция Reset, возвращающая модуль в состояние Idle
+  8 : Receive <Module1>
+    Kernel.StateChanged : 1 ; приниманием сообщение StateChanged о смене состояния
+      MachineName : Uniteller.Framework.Kernel.Tester.Responder
+      OldState : * ; не проверяем значение, только выводим на консоль
+      NewState : * ; не проверяем значение, только выводим на консоль
+      Event : <Kernel.Tester.Responder.Reset>
+; конец скрипта	  

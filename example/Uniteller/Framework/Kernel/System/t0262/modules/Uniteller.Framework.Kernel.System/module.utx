@@ -1,0 +1,15 @@
+; Метаданные системной библиотеки-расширения микро-ядра
+; Версия: 1.0.0
+; Поколение: 1
+; Описание системной библиотеки-расширения микро-ядра в бинарных образах
+<root>: Uniteller\Images
+Uniteller.Framework.Kernel.System
+  Version : 1.0.0  ; Версия
+  Generations : {1}     ; Поддерживаемые модулем поколения    
+  Protocols ; Поддерживаемые модулем протоколы
+    Kernel.System : 1
+  Module : Uniteller.Framework.Kernel.System.dll
+  Dependencies ; Зависимости  
+    Uniteller.InterchangeFormats.Kernel : 1
+    Uniteller.InterchangeFormats.Kernel.System : 1
+  Description : Служебный модуль для работы со строками

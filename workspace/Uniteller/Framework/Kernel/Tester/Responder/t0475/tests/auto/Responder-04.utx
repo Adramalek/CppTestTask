@@ -1,0 +1,10 @@
+;учебный скрипт для изучения команды Send
+Modules ; Список модулей, которые будут загружены для тестирования
+  Module1 : Uniteller.Framework.Kernel.Tester.Responder ; Загружаемый для тестирования модуль
+    Generation : 1 ; Поколение модуля
+    Protocol : Kernel.Tester.Responder ; Поддерживаемый модулем протокол
+      Generation: {1, 2}               ; Требуем поддержки следующих поколений протокола
+Script ; Исполняемый скрипт
+  1 : Send <Module1> ; Шаг первый, команда Send; адресат Module1, который мы указали в секции Modules
+    Kernel.Tester.Responder.MessageExample : 1  ; Событие MessageExample из протокола Kernel.Tester.Responder первого поколения
+  ; конец первого шага

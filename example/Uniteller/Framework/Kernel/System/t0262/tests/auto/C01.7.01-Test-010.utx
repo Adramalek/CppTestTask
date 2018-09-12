@@ -1,0 +1,31 @@
+; Тест C01.7.01-Test-010
+Head ; Заголовок теста
+  Name: C01.7.01-Test-010
+  Goal: ; Цель теста
+    Получить длину строки
+  References: ; Ссылки на пункты чек-листа
+    C01.7.01 ; Строка Source пуста
+    C01.7.02 ; Строка Source не пуста
+Modules ; Модули, загружаемые для тестирования
+  unit : Uniteller.Framework.Kernel.System
+    Generation : 1
+    Protocols ; Требуем поддержку пречисленных ниже протоколов
+      Kernel.System : 1
+Datasets  ; Наборы данных
+  Default
+    Machine :             [Machine]             ; Имя машины состояний
+    Value : "Abc"
+    Result : 3
+  Empty
+    Value : ""
+    Result : 0
+Script    ; Скрипт тестирования
+  ; Инициализация модуля и подготовка его к работе
+  10: Call <CheckGetLength>
+    Unit : <unit>
+    Machine : <Machine>
+    OldState : Idle
+    NewState : Idle
+    Event : <Kernel.System.GetLength>
+    Source : <Value>
+    Result : <Result>

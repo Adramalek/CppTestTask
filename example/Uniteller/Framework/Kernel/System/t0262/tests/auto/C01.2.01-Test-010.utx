@@ -1,0 +1,75 @@
+; Тест C01.2.01-Test-010
+Head ; Заголовок теста
+  Name: C01.2.01-Test-010
+  Goal: ; Цель теста
+    Разбить строку по разделителю
+  References: ; Ссылки на пункты чек-листа
+    C01.2.01 ; Пустая строка в Source
+    C01.2.02 ; Символ-разделитель может быть служебным символом
+    C01.2.03 ; Символ-разделитель пуст
+    C01.2.04 ; AllowEmpty установлено в true
+    C01.2.05 ; AllowEmpty установлено в false
+    C01.2.06 ; Успешно разбить строку по символу
+    C01.2.07 ; Успешно разбить строку по подстроке
+Modules ; Модули, загружаемые для тестирования
+  unit : Uniteller.Framework.Kernel.System
+    Generation : 1
+    Protocols ; Требуем поддержку пречисленных ниже протоколов
+      Kernel.System : 1
+Datasets  ; Наборы данных
+  Default
+    Machine :             [Machine]             ; Имя машины состояний
+    Source : ""
+    Delim : "."
+    Mode : <DelimMode.AnyOf>
+    AllowEmpty : True
+    Result : {""}
+  EmptySource1
+    Source : ""
+    Delim : "."
+    Mode : <DelimMode.AnyOf>
+    AllowEmpty : False
+    Result : {}
+  SpecialCharacter1
+    Source : "abracadabra"
+    Delim : ".\x09" ;tab
+    Mode : <DelimMode.AnyOf>
+    AllowEmpty : False
+    Result : {"abracadabra"}
+  SpecialCharacter2
+    Source : "abra\x09cadabra"
+    Delim : ".\x09" ;tab
+    Mode : <DelimMode.AnyOf>
+    AllowEmpty : False
+    Result : {"abra", "cadabra"} 
+  Sequence1
+    Source : "abracadabra"
+    Delim : ".\x09" ;tab
+    Mode : <DelimMode.Sequence>
+    AllowEmpty : False
+    Result : {"abracadabra"}
+  Sequence2
+    Source : "abra\x09cadabra"
+    Delim : ".\x09" ;tab
+    Mode : <DelimMode.Sequence>
+    AllowEmpty : False
+    Result : {"abra\x09cadabra"} 
+  NormalSplit1
+    Source : "String, more than string"
+    Delim : ", more than " 
+    Mode : <DelimMode.Sequence>
+    AllowEmpty : False
+    Result : {"String", "string"} 
+Script    ; Скрипт тестирования
+  ; Инициализация модуля и подготовка его к работе
+  10: Call <CheckSplit>
+    Unit : <unit>
+    Machine : <Machine>
+    OldState : Idle
+    NewState : Idle
+    Event : <Kernel.System.Split>
+    Source : <Source>
+    Delim : <Delim>
+    Mode : <Mode>
+    AllowEmpty : <AllowEmpty>
+    Result : <Result>

@@ -1,0 +1,35 @@
+; Тест C01.5.2.01-Test-010
+Head ; Заголовок теста
+  Name: C01.5.2.01-Test-010
+  Goal: ; Цель теста
+    Удалить пробелы в начале и в конце строки
+  References: ; Ссылки на пункты чек-листа
+    C01.5.2.01 ; Строка Source пуста
+    C01.5.2.02 ; Строка Source непуста
+    C01.5.2.03 ; Строка Source состоит из white-space символов
+Modules ; Модули, загружаемые для тестирования
+  unit : Uniteller.Framework.Kernel.System
+    Generation : 1
+    Protocols ; Требуем поддержку пречисленных ниже протоколов
+      Kernel.System : 1
+Datasets  ; Наборы данных
+  Default
+    Machine :             [Machine]             ; Имя машины состояний
+    Value : ""
+    Result : ""
+  NotEmpty
+    Value : "   abc   "
+    Result : "abc"
+  WhiteSpace
+    Value : "   "
+    Result : ""
+Script    ; Скрипт тестирования
+  10: Call <CheckTrim>
+    Unit : <unit>
+    Machine : <Machine>
+    OldState : Idle
+    NewState : Idle
+    Event : <Kernel.System.Trim>
+    Source : <Value>
+    Result : <Result>
+

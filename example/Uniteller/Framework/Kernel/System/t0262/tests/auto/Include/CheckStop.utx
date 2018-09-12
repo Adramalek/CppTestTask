@@ -1,0 +1,17 @@
+Goal:
+  Обеспечивает проверку работы команды Stop (позитивный сценарий)
+Procedure: CheckStop
+  Unit    | Тестируемый модуль
+  Machine : "Kernel" | Имя машины состояний Kernel
+  OldState | Старое состояние машины
+  NewState | Старое состояние машины
+  Event : Kernel.Stop | Событие, активировавшее StateChange
+Script  ; Тело процедуры
+  1 : Send <Unit>
+    Kernel.Stop : 1
+  3 : Receive <Unit>
+    Kernel.StateChanged : 1     ; Событие, присылаемое в момент изменения состояния конечного автомата
+      MachineName : <Machine>   ; - Имя конечного автомата перешедшего в новое состояние
+      OldState : <OldState>     ; - Старое состояние машины
+      NewState : <NewState>     ; - Новое состояние машины
+      Event : <Event> ; - Событие, активировавшее переход

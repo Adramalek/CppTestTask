@@ -1,0 +1,16 @@
+; Описание протокола для CrossroadController, первая версия
+<root> : Kernel\Protocols
+CrossroadController : 101
+  Namespace : Uniteller.CrossroadController
+  Generations : { 1 }
+  Enumerations ;
+    ColorType                       | Цвет сигнала светофора. Длительность сигнала определяется цветом.
+      1 : 3 
+        Red : 30                    |- Красный цвет, 30 секунд.
+        Yellow : 5                  |- Жёлтый цвет, 5 секунд.
+        Green : 40                  |- Зелёный цвет, 40 секунд.
+  Messages ;
+    SetNextLight : 1                | Следующая итерация цикла переключения сигнала светофора.
+      1 : 0
+    Pause : 2                       | Поставить модуль на паузу.
+      1 : 0

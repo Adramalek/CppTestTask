@@ -1,0 +1,2129 @@
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:45.674]
+[HOST] Starting application..[16:38:45.675]
+[HOST] Application started successfully.[16:38:45.678]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.1.01-Test-010.utx
+                                                            [16:38:45.692]
+[TESTER] Checking test script.                              [16:38:45.698]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckReplaceAll.utx
+Èíñòðóìåíòèðîâàíèå CheckReplaceAll
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ Default                    [16:38:45.700]
+[TESTER] Loading modules for test.                          [16:38:45.700]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:45.700]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckReplaceAll>                       [16:38:45.702]
+[CMD] 10-CheckReplaceAll-1 : Send <unit>                    [16:38:45.702]
+  Message: Kernel.System.ReplaceAll<65537>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:45.702]
+  Arguments: 3
+  -> Arguments[0] - Pattern - : "abc"
+  -> Arguments[1] - Source - : ""
+  -> Arguments[2] - Value - : "123"
+[CMD] 10-CheckReplaceAll-2 : Receive <unit>                 [16:38:45.703]
+  Message: Kernel.System.ReplaceAllAnswer<65538>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:45.702]
+  Arguments: 1
+  -> Arguments[0] - Result - : ""
+[CMD] 10-CheckReplaceAll-3 : Receive <unit>                 [16:38:45.705]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:45.702]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65537 (Kernel.System.ReplaceAll)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:45.906]
+[HOST] Exit with code 0[16:38:45.910]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:45.929]
+[HOST] Starting application..[16:38:45.930]
+[HOST] Application started successfully.[16:38:45.933]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.1.01-Test-010.utx
+                                                            [16:38:45.944]
+[TESTER] Checking test script.                              [16:38:45.945]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckReplaceAll.utx
+Èíñòðóìåíòèðîâàíèå CheckReplaceAll
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ EmptyPattern               [16:38:45.946]
+[TESTER] Loading modules for test.                          [16:38:45.946]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:45.946]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckReplaceAll>                       [16:38:45.947]
+[CMD] 10-CheckReplaceAll-1 : Send <unit>                    [16:38:45.947]
+  Message: Kernel.System.ReplaceAll<65537>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:45.947]
+  Arguments: 3
+  -> Arguments[0] - Pattern - : ""
+  -> Arguments[1] - Source - : "abc"
+  -> Arguments[2] - Value - : "123"
+[CMD] 10-CheckReplaceAll-2 : Receive <unit>                 [16:38:45.948]
+  Message: Kernel.System.ReplaceAllAnswer<65538>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:45.947]
+  Arguments: 1
+  -> Arguments[0] - Result - : "abc"
+[CMD] 10-CheckReplaceAll-3 : Receive <unit>                 [16:38:45.949]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:45.947]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65537 (Kernel.System.ReplaceAll)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:46.150]
+[HOST] Exit with code 0[16:38:46.156]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:46.179]
+[HOST] Starting application..[16:38:46.180]
+[HOST] Application started successfully.[16:38:46.185]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.1.01-Test-010.utx
+                                                            [16:38:46.198]
+[TESTER] Checking test script.                              [16:38:46.198]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckReplaceAll.utx
+Èíñòðóìåíòèðîâàíèå CheckReplaceAll
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ EmptyValue                 [16:38:46.199]
+[TESTER] Loading modules for test.                          [16:38:46.199]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:46.199]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckReplaceAll>                       [16:38:46.200]
+[CMD] 10-CheckReplaceAll-1 : Send <unit>                    [16:38:46.201]
+  Message: Kernel.System.ReplaceAll<65537>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:46.201]
+  Arguments: 3
+  -> Arguments[0] - Pattern - : "123"
+  -> Arguments[1] - Source - : "abc"
+  -> Arguments[2] - Value - : ""
+[CMD] 10-CheckReplaceAll-2 : Receive <unit>                 [16:38:46.201]
+  Message: Kernel.System.ReplaceAllAnswer<65538>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:46.201]
+  Arguments: 1
+  -> Arguments[0] - Result - : "abc"
+[CMD] 10-CheckReplaceAll-3 : Receive <unit>                 [16:38:46.202]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:46.201]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65537 (Kernel.System.ReplaceAll)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:46.403]
+[HOST] Exit with code 0[16:38:46.407]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:46.430]
+[HOST] Starting application..[16:38:46.431]
+[HOST] Application started successfully.[16:38:46.435]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.1.01-Test-010.utx
+                                                            [16:38:46.448]
+[TESTER] Checking test script.                              [16:38:46.449]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckReplaceAll.utx
+Èíñòðóìåíòèðîâàíèå CheckReplaceAll
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ NormalReplace              [16:38:46.450]
+[TESTER] Loading modules for test.                          [16:38:46.450]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:46.450]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckReplaceAll>                       [16:38:46.451]
+[CMD] 10-CheckReplaceAll-1 : Send <unit>                    [16:38:46.451]
+  Message: Kernel.System.ReplaceAll<65537>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:46.452]
+  Arguments: 3
+  -> Arguments[0] - Pattern - : "pattern"
+  -> Arguments[1] - Source - : "This is pattern string"
+  -> Arguments[2] - Value - : "value"
+[CMD] 10-CheckReplaceAll-2 : Receive <unit>                 [16:38:46.452]
+  Message: Kernel.System.ReplaceAllAnswer<65538>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:46.452]
+  Arguments: 1
+  -> Arguments[0] - Result - : "This is value string"
+[CMD] 10-CheckReplaceAll-3 : Receive <unit>                 [16:38:46.454]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:46.452]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65537 (Kernel.System.ReplaceAll)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:46.654]
+[HOST] Exit with code 0[16:38:46.658]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:46.675]
+[HOST] Starting application..[16:38:46.676]
+[HOST] Application started successfully.[16:38:46.679]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.1.01-Test-010.utx
+                                                            [16:38:46.690]
+[TESTER] Checking test script.                              [16:38:46.690]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckReplaceAll.utx
+Èíñòðóìåíòèðîâàíèå CheckReplaceAll
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ SpecialSymbols             [16:38:46.691]
+[TESTER] Loading modules for test.                          [16:38:46.691]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:46.691]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckReplaceAll>                       [16:38:46.692]
+[CMD] 10-CheckReplaceAll-1 : Send <unit>                    [16:38:46.692]
+  Message: Kernel.System.ReplaceAll<65537>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:46.692]
+  Arguments: 3
+  -> Arguments[0] - Pattern - : "a"
+  -> Arguments[1] - Source - : "abc	"
+  -> Arguments[2] - Value - : "	"
+[CMD] 10-CheckReplaceAll-2 : Receive <unit>                 [16:38:46.693]
+  Message: Kernel.System.ReplaceAllAnswer<65538>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:46.693]
+  Arguments: 1
+  -> Arguments[0] - Result - : "	bc	"
+[CMD] 10-CheckReplaceAll-3 : Receive <unit>                 [16:38:46.695]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:46.693]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65537 (Kernel.System.ReplaceAll)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:46.896]
+[HOST] Exit with code 0[16:38:46.900]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:46.920]
+[HOST] Starting application..[16:38:46.921]
+[HOST] Application started successfully.[16:38:46.925]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.1.02-Test-010.utx
+                                                            [16:38:46.934]
+[TESTER] Checking test script.                              [16:38:46.935]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckReplaceAll.utx
+Èíñòðóìåíòèðîâàíèå CheckReplaceAll
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ Default                    [16:38:46.935]
+[TESTER] Loading modules for test.                          [16:38:46.936]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:46.936]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckReplaceAll>                       [16:38:46.937]
+[CMD] 10-CheckReplaceAll-1 : Send <unit>                    [16:38:46.937]
+  Message: Kernel.System.ReplaceAll<65537>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:46.937]
+  Arguments: 3
+  -> Arguments[0] - Pattern - : "Ñòðîêà"
+  -> Arguments[1] - Source - : "Ñòðîêà ñ íåñêîëüêèìè ïðîáåëàìè"
+  -> Arguments[2] - Value - : "Òåêñò"
+[CMD] 10-CheckReplaceAll-2 : Receive <unit>                 [16:38:46.937]
+  Message: Kernel.System.ReplaceAllAnswer<65538>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:46.937]
+  Arguments: 1
+  -> Arguments[0] - Result - : "Òåêñò ñ íåñêîëüêèìè ïðîáåëàìè"
+[CMD] 10-CheckReplaceAll-3 : Receive <unit>                 [16:38:46.938]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:46.937]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65537 (Kernel.System.ReplaceAll)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:47.139]
+[HOST] Exit with code 0[16:38:47.143]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:47.163]
+[HOST] Starting application..[16:38:47.166]
+[HOST] Application started successfully.[16:38:47.170]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.2.01-Test-010.utx
+                                                            [16:38:47.183]
+[TESTER] Checking test script.                              [16:38:47.184]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckSplit.utx
+Èíñòðóìåíòèðîâàíèå CheckSplit
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ Default                    [16:38:47.185]
+[TESTER] Loading modules for test.                          [16:38:47.185]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:47.185]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckSplit>                            [16:38:47.187]
+[CMD] 10-CheckSplit-1 : Send <unit>                         [16:38:47.187]
+  Message: Kernel.System.Split<65539>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:47.187]
+  Arguments: 4
+  -> Arguments[0] - AllowEmpty - : True
+  -> Arguments[1] - Delim - : "."
+  -> Arguments[2] - Mode - : 0
+  -> Arguments[3] - Source - : ""
+[CMD] 10-CheckSplit-2 : Receive <unit>                      [16:38:47.188]
+  Message: Kernel.System.SplitAnswer<65540>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:47.187]
+  Arguments: 1
+  -> Arguments[0] - Result - : Array[1] : {}
+[CMD] 10-CheckSplit-3 : Receive <unit>                      [16:38:47.189]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:47.187]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65539 (Kernel.System.Split)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:47.391]
+[HOST] Exit with code 0[16:38:47.395]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:47.414]
+[HOST] Starting application..[16:38:47.416]
+[HOST] Application started successfully.[16:38:47.422]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.2.01-Test-010.utx
+                                                            [16:38:47.436]
+[TESTER] Checking test script.                              [16:38:47.437]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckSplit.utx
+Èíñòðóìåíòèðîâàíèå CheckSplit
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ EmptySource1               [16:38:47.437]
+[TESTER] Loading modules for test.                          [16:38:47.437]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:47.438]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckSplit>                            [16:38:47.438]
+[CMD] 10-CheckSplit-1 : Send <unit>                         [16:38:47.439]
+  Message: Kernel.System.Split<65539>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:47.439]
+  Arguments: 4
+  -> Arguments[0] - AllowEmpty - : False
+  -> Arguments[1] - Delim - : "."
+  -> Arguments[2] - Mode - : 0
+  -> Arguments[3] - Source - : ""
+[CMD] 10-CheckSplit-2 : Receive <unit>                      [16:38:47.439]
+  Message: Kernel.System.SplitAnswer<65540>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:47.439]
+  Arguments: 1
+  -> Arguments[0] - Result - : Array[0] : {}
+[CMD] 10-CheckSplit-3 : Receive <unit>                      [16:38:47.440]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:47.439]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65539 (Kernel.System.Split)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:47.641]
+[HOST] Exit with code 0[16:38:47.647]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:47.674]
+[HOST] Starting application..[16:38:47.675]
+[HOST] Application started successfully.[16:38:47.679]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.2.01-Test-010.utx
+                                                            [16:38:47.692]
+[TESTER] Checking test script.                              [16:38:47.692]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckSplit.utx
+Èíñòðóìåíòèðîâàíèå CheckSplit
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ NormalSplit1               [16:38:47.693]
+[TESTER] Loading modules for test.                          [16:38:47.693]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:47.693]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckSplit>                            [16:38:47.694]
+[CMD] 10-CheckSplit-1 : Send <unit>                         [16:38:47.694]
+  Message: Kernel.System.Split<65539>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:47.694]
+  Arguments: 4
+  -> Arguments[0] - AllowEmpty - : False
+  -> Arguments[1] - Delim - : ", more than "
+  -> Arguments[2] - Mode - : 1
+  -> Arguments[3] - Source - : "String, more than string"
+[CMD] 10-CheckSplit-2 : Receive <unit>                      [16:38:47.695]
+  Message: Kernel.System.SplitAnswer<65540>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:47.694]
+  Arguments: 1
+  -> Arguments[0] - Result - : Array[2] : {String, string}
+[CMD] 10-CheckSplit-3 : Receive <unit>                      [16:38:47.697]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:47.695]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65539 (Kernel.System.Split)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:47.898]
+[HOST] Exit with code 0[16:38:47.903]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:47.923]
+[HOST] Starting application..[16:38:47.924]
+[HOST] Application started successfully.[16:38:47.929]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.2.01-Test-010.utx
+                                                            [16:38:47.941]
+[TESTER] Checking test script.                              [16:38:47.942]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckSplit.utx
+Èíñòðóìåíòèðîâàíèå CheckSplit
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ Sequence1                  [16:38:47.942]
+[TESTER] Loading modules for test.                          [16:38:47.943]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:47.943]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckSplit>                            [16:38:47.944]
+[CMD] 10-CheckSplit-1 : Send <unit>                         [16:38:47.944]
+  Message: Kernel.System.Split<65539>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:47.944]
+  Arguments: 4
+  -> Arguments[0] - AllowEmpty - : False
+  -> Arguments[1] - Delim - : ".	"
+  -> Arguments[2] - Mode - : 1
+  -> Arguments[3] - Source - : "abracadabra"
+[CMD] 10-CheckSplit-2 : Receive <unit>                      [16:38:47.945]
+  Message: Kernel.System.SplitAnswer<65540>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:47.944]
+  Arguments: 1
+  -> Arguments[0] - Result - : Array[1] : {abracadabra}
+[CMD] 10-CheckSplit-3 : Receive <unit>                      [16:38:47.946]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:47.944]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65539 (Kernel.System.Split)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:48.147]
+[HOST] Exit with code 0[16:38:48.152]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:48.175]
+[HOST] Starting application..[16:38:48.177]
+[HOST] Application started successfully.[16:38:48.182]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.2.01-Test-010.utx
+                                                            [16:38:48.195]
+[TESTER] Checking test script.                              [16:38:48.195]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckSplit.utx
+Èíñòðóìåíòèðîâàíèå CheckSplit
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ Sequence2                  [16:38:48.196]
+[TESTER] Loading modules for test.                          [16:38:48.196]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:48.197]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckSplit>                            [16:38:48.198]
+[CMD] 10-CheckSplit-1 : Send <unit>                         [16:38:48.198]
+  Message: Kernel.System.Split<65539>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:48.198]
+  Arguments: 4
+  -> Arguments[0] - AllowEmpty - : False
+  -> Arguments[1] - Delim - : ".	"
+  -> Arguments[2] - Mode - : 1
+  -> Arguments[3] - Source - : "abra	cadabra"
+[CMD] 10-CheckSplit-2 : Receive <unit>                      [16:38:48.198]
+  Message: Kernel.System.SplitAnswer<65540>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:48.198]
+  Arguments: 1
+  -> Arguments[0] - Result - : Array[1] : {abra	cadabra}
+[CMD] 10-CheckSplit-3 : Receive <unit>                      [16:38:48.200]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:48.198]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65539 (Kernel.System.Split)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:48.400]
+[HOST] Exit with code 0[16:38:48.405]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:48.423]
+[HOST] Starting application..[16:38:48.424]
+[HOST] Application started successfully.[16:38:48.429]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.2.01-Test-010.utx
+                                                            [16:38:48.442]
+[TESTER] Checking test script.                              [16:38:48.443]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckSplit.utx
+Èíñòðóìåíòèðîâàíèå CheckSplit
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ SpecialCharacter1          [16:38:48.443]
+[TESTER] Loading modules for test.                          [16:38:48.444]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:48.444]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckSplit>                            [16:38:48.445]
+[CMD] 10-CheckSplit-1 : Send <unit>                         [16:38:48.445]
+  Message: Kernel.System.Split<65539>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:48.445]
+  Arguments: 4
+  -> Arguments[0] - AllowEmpty - : False
+  -> Arguments[1] - Delim - : ".	"
+  -> Arguments[2] - Mode - : 0
+  -> Arguments[3] - Source - : "abracadabra"
+[CMD] 10-CheckSplit-2 : Receive <unit>                      [16:38:48.446]
+  Message: Kernel.System.SplitAnswer<65540>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:48.445]
+  Arguments: 1
+  -> Arguments[0] - Result - : Array[1] : {abracadabra}
+[CMD] 10-CheckSplit-3 : Receive <unit>                      [16:38:48.447]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:48.445]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65539 (Kernel.System.Split)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:48.648]
+[HOST] Exit with code 0[16:38:48.652]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:48.669]
+[HOST] Starting application..[16:38:48.670]
+[HOST] Application started successfully.[16:38:48.673]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.2.01-Test-010.utx
+                                                            [16:38:48.687]
+[TESTER] Checking test script.                              [16:38:48.688]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckSplit.utx
+Èíñòðóìåíòèðîâàíèå CheckSplit
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ SpecialCharacter2          [16:38:48.689]
+[TESTER] Loading modules for test.                          [16:38:48.690]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:48.690]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckSplit>                            [16:38:48.691]
+[CMD] 10-CheckSplit-1 : Send <unit>                         [16:38:48.691]
+  Message: Kernel.System.Split<65539>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:48.690]
+  Arguments: 4
+  -> Arguments[0] - AllowEmpty - : False
+  -> Arguments[1] - Delim - : ".	"
+  -> Arguments[2] - Mode - : 0
+  -> Arguments[3] - Source - : "abra	cadabra"
+[CMD] 10-CheckSplit-2 : Receive <unit>                      [16:38:48.691]
+  Message: Kernel.System.SplitAnswer<65540>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:48.690]
+  Arguments: 1
+  -> Arguments[0] - Result - : Array[2] : {abra, cadabra}
+[CMD] 10-CheckSplit-3 : Receive <unit>                      [16:38:48.692]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:48.691]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65539 (Kernel.System.Split)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:48.893]
+[HOST] Exit with code 0[16:38:48.897]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:48.923]
+[HOST] Starting application..[16:38:48.924]
+[HOST] Application started successfully.[16:38:48.930]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.2.02-Test-010.utx
+                                                            [16:38:48.945]
+[TESTER] Checking test script.                              [16:38:48.946]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckSplit.utx
+Èíñòðóìåíòèðîâàíèå CheckSplit
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ Default                    [16:38:48.947]
+[TESTER] Loading modules for test.                          [16:38:48.947]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:48.948]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckSplit>                            [16:38:48.949]
+[CMD] 10-CheckSplit-1 : Send <unit>                         [16:38:48.949]
+  Message: Kernel.System.Split<65539>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:48.949]
+  Arguments: 4
+  -> Arguments[0] - AllowEmpty - : True
+  -> Arguments[1] - Delim - : " "
+  -> Arguments[2] - Mode - : 0
+  -> Arguments[3] - Source - : "Ñòðîêà ñ íåñêîëüêèìè ïðîáåëàìè"
+[CMD] 10-CheckSplit-2 : Receive <unit>                      [16:38:48.950]
+  Message: Kernel.System.SplitAnswer<65540>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:48.950]
+  Arguments: 1
+  -> Arguments[0] - Result - : Array[4] : {Ñòðîêà, ñ, íåñêîëüêèìè, ïðîáåëàìè}
+[CMD] 10-CheckSplit-3 : Receive <unit>                      [16:38:48.952]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:48.950]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65539 (Kernel.System.Split)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:49.154]
+[HOST] Exit with code 0[16:38:49.159]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:49.182]
+[HOST] Starting application..[16:38:49.184]
+[HOST] Application started successfully.[16:38:49.189]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.3.01-Test-010.utx
+                                                            [16:38:49.207]
+[TESTER] Checking test script.                              [16:38:49.209]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckUnpackFirst.utx
+Èíñòðóìåíòèðîâàíèå CheckUnpackFirst
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ Default                    [16:38:49.211]
+[TESTER] Loading modules for test.                          [16:38:49.211]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:49.212]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckUnpackFirst>                      [16:38:49.214]
+[CMD] 10-CheckUnpackFirst-1 : Send <unit>                   [16:38:49.214]
+  Message: Kernel.System.UnpackFirst<65541>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:49.214]
+  Arguments: 3
+  -> Arguments[0] - Delim - : "."
+  -> Arguments[1] - Mode - : 0
+  -> Arguments[2] - Source - : ""
+[CMD] 10-CheckUnpackFirst-2 : Receive <unit>                [16:38:49.215]
+  Message: Kernel.System.UnpackFirstAnswer<65542>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:49.214]
+  Arguments: 3
+  -> Arguments[0] - Head - : ""
+  -> Arguments[1] - Status - : 4
+  -> Arguments[2] - Tail - : ""
+[CMD] 10-CheckUnpackFirst-3 : Receive <unit>                [16:38:49.221]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:49.215]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65541 (Kernel.System.UnpackFirst)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:49.422]
+[HOST] Exit with code 0[16:38:49.428]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:49.449]
+[HOST] Starting application..[16:38:49.450]
+[HOST] Application started successfully.[16:38:49.454]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.3.01-Test-010.utx
+                                                            [16:38:49.466]
+[TESTER] Checking test script.                              [16:38:49.467]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckUnpackFirst.utx
+Èíñòðóìåíòèðîâàíèå CheckUnpackFirst
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ EmptyDelim                 [16:38:49.468]
+[TESTER] Loading modules for test.                          [16:38:49.468]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:49.468]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckUnpackFirst>                      [16:38:49.469]
+[CMD] 10-CheckUnpackFirst-1 : Send <unit>                   [16:38:49.469]
+  Message: Kernel.System.UnpackFirst<65541>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:49.469]
+  Arguments: 3
+  -> Arguments[0] - Delim - : ""
+  -> Arguments[1] - Mode - : 0
+  -> Arguments[2] - Source - : "abc"
+[CMD] 10-CheckUnpackFirst-2 : Receive <unit>                [16:38:49.470]
+  Message: Kernel.System.UnpackFirstAnswer<65542>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:49.469]
+  Arguments: 3
+  -> Arguments[0] - Head - : ""
+  -> Arguments[1] - Status - : 4
+  -> Arguments[2] - Tail - : ""
+[CMD] 10-CheckUnpackFirst-3 : Receive <unit>                [16:38:49.471]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:49.469]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65541 (Kernel.System.UnpackFirst)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:49.672]
+[HOST] Exit with code 0[16:38:49.676]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:49.698]
+[HOST] Starting application..[16:38:49.699]
+[HOST] Application started successfully.[16:38:49.704]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.3.01-Test-010.utx
+                                                            [16:38:49.718]
+[TESTER] Checking test script.                              [16:38:49.719]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckUnpackFirst.utx
+Èíñòðóìåíòèðîâàíèå CheckUnpackFirst
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ EndsWith                   [16:38:49.720]
+[TESTER] Loading modules for test.                          [16:38:49.720]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:49.720]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckUnpackFirst>                      [16:38:49.721]
+[CMD] 10-CheckUnpackFirst-1 : Send <unit>                   [16:38:49.722]
+  Message: Kernel.System.UnpackFirst<65541>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:49.722]
+  Arguments: 3
+  -> Arguments[0] - Delim - : "."
+  -> Arguments[1] - Mode - : 0
+  -> Arguments[2] - Source - : "file."
+[CMD] 10-CheckUnpackFirst-2 : Receive <unit>                [16:38:49.722]
+  Message: Kernel.System.UnpackFirstAnswer<65542>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:49.722]
+  Arguments: 3
+  -> Arguments[0] - Head - : "file"
+  -> Arguments[1] - Status - : 1
+  -> Arguments[2] - Tail - : ""
+[CMD] 10-CheckUnpackFirst-3 : Receive <unit>                [16:38:49.724]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:49.722]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65541 (Kernel.System.UnpackFirst)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:49.926]
+[HOST] Exit with code 0[16:38:49.931]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:49.947]
+[HOST] Starting application..[16:38:49.948]
+[HOST] Application started successfully.[16:38:49.951]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.3.01-Test-010.utx
+                                                            [16:38:49.962]
+[TESTER] Checking test script.                              [16:38:49.963]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckUnpackFirst.utx
+Èíñòðóìåíòèðîâàíèå CheckUnpackFirst
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ NoDelim                    [16:38:49.963]
+[TESTER] Loading modules for test.                          [16:38:49.963]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:49.963]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckUnpackFirst>                      [16:38:49.965]
+[CMD] 10-CheckUnpackFirst-1 : Send <unit>                   [16:38:49.965]
+  Message: Kernel.System.UnpackFirst<65541>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:49.965]
+  Arguments: 3
+  -> Arguments[0] - Delim - : "123"
+  -> Arguments[1] - Mode - : 0
+  -> Arguments[2] - Source - : "abc"
+[CMD] 10-CheckUnpackFirst-2 : Receive <unit>                [16:38:49.966]
+  Message: Kernel.System.UnpackFirstAnswer<65542>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:49.966]
+  Arguments: 3
+  -> Arguments[0] - Head - : "abc"
+  -> Arguments[1] - Status - : 1
+  -> Arguments[2] - Tail - : ""
+[CMD] 10-CheckUnpackFirst-3 : Receive <unit>                [16:38:49.968]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:49.966]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65541 (Kernel.System.UnpackFirst)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:50.172]
+[HOST] Exit with code 0[16:38:50.176]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:50.194]
+[HOST] Starting application..[16:38:50.195]
+[HOST] Application started successfully.[16:38:50.198]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.3.01-Test-010.utx
+                                                            [16:38:50.208]
+[TESTER] Checking test script.                              [16:38:50.209]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckUnpackFirst.utx
+Èíñòðóìåíòèðîâàíèå CheckUnpackFirst
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ SourceEqualDelim           [16:38:50.210]
+[TESTER] Loading modules for test.                          [16:38:50.210]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:50.210]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckUnpackFirst>                      [16:38:50.211]
+[CMD] 10-CheckUnpackFirst-1 : Send <unit>                   [16:38:50.211]
+  Message: Kernel.System.UnpackFirst<65541>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:50.211]
+  Arguments: 3
+  -> Arguments[0] - Delim - : "abc"
+  -> Arguments[1] - Mode - : 0
+  -> Arguments[2] - Source - : "abc"
+[CMD] 10-CheckUnpackFirst-2 : Receive <unit>                [16:38:50.212]
+  Message: Kernel.System.UnpackFirstAnswer<65542>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:50.211]
+  Arguments: 3
+  -> Arguments[0] - Head - : ""
+  -> Arguments[1] - Status - : 3
+  -> Arguments[2] - Tail - : ""
+[CMD] 10-CheckUnpackFirst-3 : Receive <unit>                [16:38:50.213]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:50.211]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65541 (Kernel.System.UnpackFirst)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:50.414]
+[HOST] Exit with code 0[16:38:50.418]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:50.436]
+[HOST] Starting application..[16:38:50.437]
+[HOST] Application started successfully.[16:38:50.440]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.3.01-Test-010.utx
+                                                            [16:38:50.452]
+[TESTER] Checking test script.                              [16:38:50.452]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckUnpackFirst.utx
+Èíñòðóìåíòèðîâàíèå CheckUnpackFirst
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ StartsWith                 [16:38:50.453]
+[TESTER] Loading modules for test.                          [16:38:50.454]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:50.457]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckUnpackFirst>                      [16:38:50.458]
+[CMD] 10-CheckUnpackFirst-1 : Send <unit>                   [16:38:50.458]
+  Message: Kernel.System.UnpackFirst<65541>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:50.456]
+  Arguments: 3
+  -> Arguments[0] - Delim - : "."
+  -> Arguments[1] - Mode - : 0
+  -> Arguments[2] - Source - : ".utx"
+[CMD] 10-CheckUnpackFirst-2 : Receive <unit>                [16:38:50.458]
+  Message: Kernel.System.UnpackFirstAnswer<65542>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:50.456]
+  Arguments: 3
+  -> Arguments[0] - Head - : ""
+  -> Arguments[1] - Status - : 2
+  -> Arguments[2] - Tail - : "utx"
+[CMD] 10-CheckUnpackFirst-3 : Receive <unit>                [16:38:50.460]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:50.456]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65541 (Kernel.System.UnpackFirst)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:50.661]
+[HOST] Exit with code 0[16:38:50.666]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:50.682]
+[HOST] Starting application..[16:38:50.683]
+[HOST] Application started successfully.[16:38:50.687]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.3.01-Test-010.utx
+                                                            [16:38:50.698]
+[TESTER] Checking test script.                              [16:38:50.699]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckUnpackFirst.utx
+Èíñòðóìåíòèðîâàíèå CheckUnpackFirst
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ Success                    [16:38:50.700]
+[TESTER] Loading modules for test.                          [16:38:50.700]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:50.700]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckUnpackFirst>                      [16:38:50.701]
+[CMD] 10-CheckUnpackFirst-1 : Send <unit>                   [16:38:50.701]
+  Message: Kernel.System.UnpackFirst<65541>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:50.701]
+  Arguments: 3
+  -> Arguments[0] - Delim - : "."
+  -> Arguments[1] - Mode - : 0
+  -> Arguments[2] - Source - : "file.utc"
+[CMD] 10-CheckUnpackFirst-2 : Receive <unit>                [16:38:50.702]
+  Message: Kernel.System.UnpackFirstAnswer<65542>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:50.701]
+  Arguments: 3
+  -> Arguments[0] - Head - : "file"
+  -> Arguments[1] - Status - : 0
+  -> Arguments[2] - Tail - : "utc"
+[CMD] 10-CheckUnpackFirst-3 : Receive <unit>                [16:38:50.703]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:50.701]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65541 (Kernel.System.UnpackFirst)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:50.904]
+[HOST] Exit with code 0[16:38:50.908]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:50.930]
+[HOST] Starting application..[16:38:50.932]
+[HOST] Application started successfully.[16:38:50.935]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.4.01-Test-010.utx
+                                                            [16:38:50.946]
+[TESTER] Checking test script.                              [16:38:50.947]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckUnpackLast.utx
+Èíñòðóìåíòèðîâàíèå CheckUnpackLast
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ Default                    [16:38:50.948]
+[TESTER] Loading modules for test.                          [16:38:50.948]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:50.948]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckUnpackLast>                       [16:38:50.951]
+[CMD] 10-CheckUnpackLast-1 : Send <unit>                    [16:38:50.951]
+  Message: Kernel.System.UnpackLast<65543>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:50.951]
+  Arguments: 3
+  -> Arguments[0] - Delim - : "."
+  -> Arguments[1] - Mode - : 0
+  -> Arguments[2] - Source - : ""
+[CMD] 10-CheckUnpackLast-2 : Receive <unit>                 [16:38:50.952]
+  Message: Kernel.System.UnpackLastAnswer<65544>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:50.951]
+  Arguments: 3
+  -> Arguments[0] - Head - : ""
+  -> Arguments[1] - Status - : 4
+  -> Arguments[2] - Tail - : ""
+[CMD] 10-CheckUnpackLast-3 : Receive <unit>                 [16:38:50.954]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:50.951]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65543 (Kernel.System.UnpackLast)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:51.157]
+[HOST] Exit with code 0[16:38:51.161]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:51.179]
+[HOST] Starting application..[16:38:51.180]
+[HOST] Application started successfully.[16:38:51.183]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.4.01-Test-010.utx
+                                                            [16:38:51.194]
+[TESTER] Checking test script.                              [16:38:51.195]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckUnpackLast.utx
+Èíñòðóìåíòèðîâàíèå CheckUnpackLast
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ EmptyDelim                 [16:38:51.195]
+[TESTER] Loading modules for test.                          [16:38:51.196]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:51.196]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckUnpackLast>                       [16:38:51.197]
+[CMD] 10-CheckUnpackLast-1 : Send <unit>                    [16:38:51.197]
+  Message: Kernel.System.UnpackLast<65543>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:51.197]
+  Arguments: 3
+  -> Arguments[0] - Delim - : ""
+  -> Arguments[1] - Mode - : 0
+  -> Arguments[2] - Source - : "abc"
+[CMD] 10-CheckUnpackLast-2 : Receive <unit>                 [16:38:51.198]
+  Message: Kernel.System.UnpackLastAnswer<65544>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:51.197]
+  Arguments: 3
+  -> Arguments[0] - Head - : ""
+  -> Arguments[1] - Status - : 4
+  -> Arguments[2] - Tail - : ""
+[CMD] 10-CheckUnpackLast-3 : Receive <unit>                 [16:38:51.199]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:51.197]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65543 (Kernel.System.UnpackLast)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:51.401]
+[HOST] Exit with code 0[16:38:51.405]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:51.434]
+[HOST] Starting application..[16:38:51.436]
+[HOST] Application started successfully.[16:38:51.442]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.4.01-Test-010.utx
+                                                            [16:38:51.459]
+[TESTER] Checking test script.                              [16:38:51.459]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckUnpackLast.utx
+Èíñòðóìåíòèðîâàíèå CheckUnpackLast
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ EndsWith                   [16:38:51.461]
+[TESTER] Loading modules for test.                          [16:38:51.461]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:51.461]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckUnpackLast>                       [16:38:51.463]
+[CMD] 10-CheckUnpackLast-1 : Send <unit>                    [16:38:51.463]
+  Message: Kernel.System.UnpackLast<65543>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:51.463]
+  Arguments: 3
+  -> Arguments[0] - Delim - : "."
+  -> Arguments[1] - Mode - : 0
+  -> Arguments[2] - Source - : "file."
+[CMD] 10-CheckUnpackLast-2 : Receive <unit>                 [16:38:51.464]
+  Message: Kernel.System.UnpackLastAnswer<65544>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:51.463]
+  Arguments: 3
+  -> Arguments[0] - Head - : "file"
+  -> Arguments[1] - Status - : 1
+  -> Arguments[2] - Tail - : ""
+[CMD] 10-CheckUnpackLast-3 : Receive <unit>                 [16:38:51.467]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:51.463]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65543 (Kernel.System.UnpackLast)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:51.668]
+[HOST] Exit with code 0[16:38:51.672]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:51.687]
+[HOST] Starting application..[16:38:51.688]
+[HOST] Application started successfully.[16:38:51.692]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.4.01-Test-010.utx
+                                                            [16:38:51.702]
+[TESTER] Checking test script.                              [16:38:51.703]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckUnpackLast.utx
+Èíñòðóìåíòèðîâàíèå CheckUnpackLast
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ NoDelim                    [16:38:51.703]
+[TESTER] Loading modules for test.                          [16:38:51.703]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:51.703]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckUnpackLast>                       [16:38:51.704]
+[CMD] 10-CheckUnpackLast-1 : Send <unit>                    [16:38:51.705]
+  Message: Kernel.System.UnpackLast<65543>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:51.705]
+  Arguments: 3
+  -> Arguments[0] - Delim - : "."
+  -> Arguments[1] - Mode - : 0
+  -> Arguments[2] - Source - : "abc"
+[CMD] 10-CheckUnpackLast-2 : Receive <unit>                 [16:38:51.705]
+  Message: Kernel.System.UnpackLastAnswer<65544>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:51.705]
+  Arguments: 3
+  -> Arguments[0] - Head - : ""
+  -> Arguments[1] - Status - : 2
+  -> Arguments[2] - Tail - : "abc"
+[CMD] 10-CheckUnpackLast-3 : Receive <unit>                 [16:38:51.707]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:51.705]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65543 (Kernel.System.UnpackLast)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:51.908]
+[HOST] Exit with code 0[16:38:51.913]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:51.933]
+[HOST] Starting application..[16:38:51.934]
+[HOST] Application started successfully.[16:38:51.939]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.4.01-Test-010.utx
+                                                            [16:38:51.948]
+[TESTER] Checking test script.                              [16:38:51.949]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckUnpackLast.utx
+Èíñòðóìåíòèðîâàíèå CheckUnpackLast
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ SourceEqualDelim           [16:38:51.950]
+[TESTER] Loading modules for test.                          [16:38:51.950]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:51.950]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckUnpackLast>                       [16:38:51.951]
+[CMD] 10-CheckUnpackLast-1 : Send <unit>                    [16:38:51.951]
+  Message: Kernel.System.UnpackLast<65543>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:51.951]
+  Arguments: 3
+  -> Arguments[0] - Delim - : "abc"
+  -> Arguments[1] - Mode - : 0
+  -> Arguments[2] - Source - : "abc"
+[CMD] 10-CheckUnpackLast-2 : Receive <unit>                 [16:38:51.952]
+  Message: Kernel.System.UnpackLastAnswer<65544>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:51.951]
+  Arguments: 3
+  -> Arguments[0] - Head - : ""
+  -> Arguments[1] - Status - : 3
+  -> Arguments[2] - Tail - : ""
+[CMD] 10-CheckUnpackLast-3 : Receive <unit>                 [16:38:51.953]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:51.951]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65543 (Kernel.System.UnpackLast)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:52.154]
+[HOST] Exit with code 0[16:38:52.158]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:52.174]
+[HOST] Starting application..[16:38:52.175]
+[HOST] Application started successfully.[16:38:52.178]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.4.01-Test-010.utx
+                                                            [16:38:52.190]
+[TESTER] Checking test script.                              [16:38:52.191]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckUnpackLast.utx
+Èíñòðóìåíòèðîâàíèå CheckUnpackLast
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ StartsWith                 [16:38:52.193]
+[TESTER] Loading modules for test.                          [16:38:52.193]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:52.193]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckUnpackLast>                       [16:38:52.195]
+[CMD] 10-CheckUnpackLast-1 : Send <unit>                    [16:38:52.195]
+  Message: Kernel.System.UnpackLast<65543>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:52.195]
+  Arguments: 3
+  -> Arguments[0] - Delim - : "."
+  -> Arguments[1] - Mode - : 0
+  -> Arguments[2] - Source - : ".utx"
+[CMD] 10-CheckUnpackLast-2 : Receive <unit>                 [16:38:52.196]
+  Message: Kernel.System.UnpackLastAnswer<65544>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:52.195]
+  Arguments: 3
+  -> Arguments[0] - Head - : ""
+  -> Arguments[1] - Status - : 2
+  -> Arguments[2] - Tail - : "utx"
+[CMD] 10-CheckUnpackLast-3 : Receive <unit>                 [16:38:52.198]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:52.195]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65543 (Kernel.System.UnpackLast)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:52.402]
+[HOST] Exit with code 0[16:38:52.409]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:52.435]
+[HOST] Starting application..[16:38:52.436]
+[HOST] Application started successfully.[16:38:52.441]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.4.01-Test-010.utx
+                                                            [16:38:52.451]
+[TESTER] Checking test script.                              [16:38:52.452]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckUnpackLast.utx
+Èíñòðóìåíòèðîâàíèå CheckUnpackLast
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ Success                    [16:38:52.453]
+[TESTER] Loading modules for test.                          [16:38:52.453]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:52.454]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckUnpackLast>                       [16:38:52.456]
+[CMD] 10-CheckUnpackLast-1 : Send <unit>                    [16:38:52.456]
+  Message: Kernel.System.UnpackLast<65543>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:52.456]
+  Arguments: 3
+  -> Arguments[0] - Delim - : "."
+  -> Arguments[1] - Mode - : 0
+  -> Arguments[2] - Source - : "file.utc"
+[CMD] 10-CheckUnpackLast-2 : Receive <unit>                 [16:38:52.457]
+  Message: Kernel.System.UnpackLastAnswer<65544>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:52.456]
+  Arguments: 3
+  -> Arguments[0] - Head - : "file"
+  -> Arguments[1] - Status - : 0
+  -> Arguments[2] - Tail - : "utc"
+[CMD] 10-CheckUnpackLast-3 : Receive <unit>                 [16:38:52.458]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:52.456]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65543 (Kernel.System.UnpackLast)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:52.660]
+[HOST] Exit with code 0[16:38:52.664]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:52.685]
+[HOST] Starting application..[16:38:52.687]
+[HOST] Application started successfully.[16:38:52.692]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.5.1.01-Test-010.utx
+                                                            [16:38:52.706]
+[TESTER] Checking test script.                              [16:38:52.706]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckTrimRight.utx
+Èíñòðóìåíòèðîâàíèå CheckTrimRight
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ Default                    [16:38:52.707]
+[TESTER] Loading modules for test.                          [16:38:52.707]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:52.707]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckTrimRight>                        [16:38:52.708]
+[CMD] 10-CheckTrimRight-1 : Send <unit>                     [16:38:52.708]
+  Message: Kernel.System.TrimRight<65547>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:52.708]
+  Arguments: 1
+  -> Arguments[0] - Source - : ""
+[CMD] 10-CheckTrimRight-2 : Receive <unit>                  [16:38:52.709]
+  Message: Kernel.System.TrimRightAnswer<65548>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:52.709]
+  Arguments: 1
+  -> Arguments[0] - Result - : ""
+[CMD] 10-CheckTrimRight-3 : Receive <unit>                  [16:38:52.710]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:52.709]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65547 (Kernel.System.TrimRight)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:52.911]
+[HOST] Exit with code 0[16:38:52.914]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:52.931]
+[HOST] Starting application..[16:38:52.932]
+[HOST] Application started successfully.[16:38:52.936]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.5.1.01-Test-010.utx
+                                                            [16:38:52.947]
+[TESTER] Checking test script.                              [16:38:52.948]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckTrimRight.utx
+Èíñòðóìåíòèðîâàíèå CheckTrimRight
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ NotEmpty                   [16:38:52.948]
+[TESTER] Loading modules for test.                          [16:38:52.948]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:52.948]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckTrimRight>                        [16:38:52.950]
+[CMD] 10-CheckTrimRight-1 : Send <unit>                     [16:38:52.950]
+  Message: Kernel.System.TrimRight<65547>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:52.950]
+  Arguments: 1
+  -> Arguments[0] - Source - : "abc   "
+[CMD] 10-CheckTrimRight-2 : Receive <unit>                  [16:38:52.950]
+  Message: Kernel.System.TrimRightAnswer<65548>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:52.950]
+  Arguments: 1
+  -> Arguments[0] - Result - : "abc"
+[CMD] 10-CheckTrimRight-3 : Receive <unit>                  [16:38:52.951]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:52.950]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65547 (Kernel.System.TrimRight)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:53.153]
+[HOST] Exit with code 0[16:38:53.158]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:53.179]
+[HOST] Starting application..[16:38:53.180]
+[HOST] Application started successfully.[16:38:53.184]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.5.1.01-Test-010.utx
+                                                            [16:38:53.197]
+[TESTER] Checking test script.                              [16:38:53.198]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckTrimRight.utx
+Èíñòðóìåíòèðîâàíèå CheckTrimRight
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ WhiteSpace                 [16:38:53.199]
+[TESTER] Loading modules for test.                          [16:38:53.199]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:53.199]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckTrimRight>                        [16:38:53.200]
+[CMD] 10-CheckTrimRight-1 : Send <unit>                     [16:38:53.200]
+  Message: Kernel.System.TrimRight<65547>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:53.200]
+  Arguments: 1
+  -> Arguments[0] - Source - : "   "
+[CMD] 10-CheckTrimRight-2 : Receive <unit>                  [16:38:53.200]
+  Message: Kernel.System.TrimRightAnswer<65548>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:53.200]
+  Arguments: 1
+  -> Arguments[0] - Result - : ""
+[CMD] 10-CheckTrimRight-3 : Receive <unit>                  [16:38:53.202]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:53.200]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65547 (Kernel.System.TrimRight)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:53.402]
+[HOST] Exit with code 0[16:38:53.406]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:53.422]
+[HOST] Starting application..[16:38:53.423]
+[HOST] Application started successfully.[16:38:53.427]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.5.2.01-Test-010.utx
+                                                            [16:38:53.436]
+[TESTER] Checking test script.                              [16:38:53.437]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckTrim.utx
+Èíñòðóìåíòèðîâàíèå CheckTrim
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ Default                    [16:38:53.438]
+[TESTER] Loading modules for test.                          [16:38:53.438]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:53.438]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckTrim>                             [16:38:53.439]
+[CMD] 10-CheckTrim-1 : Send <unit>                          [16:38:53.439]
+  Message: Kernel.System.Trim<65549>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:53.439]
+  Arguments: 1
+  -> Arguments[0] - Source - : ""
+[CMD] 10-CheckTrim-2 : Receive <unit>                       [16:38:53.439]
+  Message: Kernel.System.TrimAnswer<65550>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:53.439]
+  Arguments: 1
+  -> Arguments[0] - Result - : ""
+[CMD] 10-CheckTrim-3 : Receive <unit>                       [16:38:53.440]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:53.439]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65549 (Kernel.System.Trim)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:53.641]
+[HOST] Exit with code 0[16:38:53.646]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:53.694]
+[HOST] Starting application..[16:38:53.695]
+[HOST] Application started successfully.[16:38:53.699]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.5.2.01-Test-010.utx
+                                                            [16:38:53.709]
+[TESTER] Checking test script.                              [16:38:53.711]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckTrim.utx
+Èíñòðóìåíòèðîâàíèå CheckTrim
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ NotEmpty                   [16:38:53.712]
+[TESTER] Loading modules for test.                          [16:38:53.712]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:53.712]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckTrim>                             [16:38:53.713]
+[CMD] 10-CheckTrim-1 : Send <unit>                          [16:38:53.713]
+  Message: Kernel.System.Trim<65549>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:53.713]
+  Arguments: 1
+  -> Arguments[0] - Source - : "   abc   "
+[CMD] 10-CheckTrim-2 : Receive <unit>                       [16:38:53.713]
+  Message: Kernel.System.TrimAnswer<65550>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:53.713]
+  Arguments: 1
+  -> Arguments[0] - Result - : "abc"
+[CMD] 10-CheckTrim-3 : Receive <unit>                       [16:38:53.714]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:53.713]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65549 (Kernel.System.Trim)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:53.916]
+[HOST] Exit with code 0[16:38:53.920]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:53.939]
+[HOST] Starting application..[16:38:53.940]
+[HOST] Application started successfully.[16:38:53.944]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.5.2.01-Test-010.utx
+                                                            [16:38:53.954]
+[TESTER] Checking test script.                              [16:38:53.954]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckTrim.utx
+Èíñòðóìåíòèðîâàíèå CheckTrim
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ WhiteSpace                 [16:38:53.955]
+[TESTER] Loading modules for test.                          [16:38:53.955]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:53.955]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckTrim>                             [16:38:53.956]
+[CMD] 10-CheckTrim-1 : Send <unit>                          [16:38:53.956]
+  Message: Kernel.System.Trim<65549>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:53.956]
+  Arguments: 1
+  -> Arguments[0] - Source - : "   "
+[CMD] 10-CheckTrim-2 : Receive <unit>                       [16:38:53.956]
+  Message: Kernel.System.TrimAnswer<65550>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:53.956]
+  Arguments: 1
+  -> Arguments[0] - Result - : ""
+[CMD] 10-CheckTrim-3 : Receive <unit>                       [16:38:53.958]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:53.956]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65549 (Kernel.System.Trim)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:54.158]
+[HOST] Exit with code 0[16:38:54.164]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:54.182]
+[HOST] Starting application..[16:38:54.184]
+[HOST] Application started successfully.[16:38:54.190]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.5.3.01-Test-010.utx
+                                                            [16:38:54.202]
+[TESTER] Checking test script.                              [16:38:54.203]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckTrimLeft.utx
+Èíñòðóìåíòèðîâàíèå CheckTrimLeft
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ Default                    [16:38:54.203]
+[TESTER] Loading modules for test.                          [16:38:54.204]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:54.204]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckTrimLeft>                         [16:38:54.205]
+[CMD] 10-CheckTrimLeft-1 : Send <unit>                      [16:38:54.205]
+  Message: Kernel.System.TrimLeft<65545>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:54.205]
+  Arguments: 1
+  -> Arguments[0] - Source - : ""
+[CMD] 10-CheckTrimLeft-2 : Receive <unit>                   [16:38:54.206]
+  Message: Kernel.System.TrimLeftAnswer<65546>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:54.205]
+  Arguments: 1
+  -> Arguments[0] - Result - : ""
+[CMD] 10-CheckTrimLeft-3 : Receive <unit>                   [16:38:54.207]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:54.205]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65545 (Kernel.System.TrimLeft)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:54.408]
+[HOST] Exit with code 0[16:38:54.414]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:54.440]
+[HOST] Starting application..[16:38:54.441]
+[HOST] Application started successfully.[16:38:54.446]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.5.3.01-Test-010.utx
+                                                            [16:38:54.455]
+[TESTER] Checking test script.                              [16:38:54.456]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckTrimLeft.utx
+Èíñòðóìåíòèðîâàíèå CheckTrimLeft
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ NotEmpty                   [16:38:54.456]
+[TESTER] Loading modules for test.                          [16:38:54.457]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:54.457]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckTrimLeft>                         [16:38:54.458]
+[CMD] 10-CheckTrimLeft-1 : Send <unit>                      [16:38:54.458]
+  Message: Kernel.System.TrimLeft<65545>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:54.458]
+  Arguments: 1
+  -> Arguments[0] - Source - : "  abc"
+[CMD] 10-CheckTrimLeft-2 : Receive <unit>                   [16:38:54.458]
+  Message: Kernel.System.TrimLeftAnswer<65546>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:54.458]
+  Arguments: 1
+  -> Arguments[0] - Result - : "abc"
+[CMD] 10-CheckTrimLeft-3 : Receive <unit>                   [16:38:54.459]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:54.458]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65545 (Kernel.System.TrimLeft)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:54.660]
+[HOST] Exit with code 0[16:38:54.664]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:54.681]
+[HOST] Starting application..[16:38:54.682]
+[HOST] Application started successfully.[16:38:54.686]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.5.3.01-Test-010.utx
+                                                            [16:38:54.701]
+[TESTER] Checking test script.                              [16:38:54.702]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckTrimLeft.utx
+Èíñòðóìåíòèðîâàíèå CheckTrimLeft
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ WhiteSpace                 [16:38:54.703]
+[TESTER] Loading modules for test.                          [16:38:54.703]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:54.705]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckTrimLeft>                         [16:38:54.706]
+[CMD] 10-CheckTrimLeft-1 : Send <unit>                      [16:38:54.706]
+  Message: Kernel.System.TrimLeft<65545>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:54.705]
+  Arguments: 1
+  -> Arguments[0] - Source - : "   "
+[CMD] 10-CheckTrimLeft-2 : Receive <unit>                   [16:38:54.706]
+  Message: Kernel.System.TrimLeftAnswer<65546>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:54.705]
+  Arguments: 1
+  -> Arguments[0] - Result - : ""
+[CMD] 10-CheckTrimLeft-3 : Receive <unit>                   [16:38:54.708]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:54.705]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65545 (Kernel.System.TrimLeft)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:54.908]
+[HOST] Exit with code 0[16:38:54.912]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:54.932]
+[HOST] Starting application..[16:38:54.933]
+[HOST] Application started successfully.[16:38:54.937]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.6.01-Test-010.utx
+                                                            [16:38:54.950]
+[TESTER] Checking test script.                              [16:38:54.951]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckMatchFormat.utx
+Èíñòðóìåíòèðîâàíèå CheckMatchFormat
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ BadFormat                  [16:38:54.952]
+[TESTER] Loading modules for test.                          [16:38:54.952]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:54.953]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckMatchFormat>                      [16:38:54.954]
+[CMD] 10-CheckMatchFormat-1 : Send <unit>                   [16:38:54.954]
+  Message: Kernel.System.MatchFormat<65551>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:54.954]
+  Arguments: 2
+  -> Arguments[0] - Format - : "\0w-\d"
+  -> Arguments[1] - Source - : "12345678"
+[CMD] 10-CheckMatchFormat-2 : Receive <unit>                [16:38:54.954]
+  Message: Kernel.System.MatchFormatAnswer<65552>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:54.954]
+  Arguments: 2
+  -> Arguments[0] - MatchResult - : 2
+  -> Arguments[1] - Result - : Array[0] : {}
+[CMD] 10-CheckMatchFormat-3 : Receive <unit>                [16:38:54.956]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:54.954]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65551 (Kernel.System.MatchFormat)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:55.157]
+[HOST] Exit with code 0[16:38:55.161]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:55.178]
+[HOST] Starting application..[16:38:55.179]
+[HOST] Application started successfully.[16:38:55.182]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.6.01-Test-010.utx
+                                                            [16:38:55.195]
+[TESTER] Checking test script.                              [16:38:55.196]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckMatchFormat.utx
+Èíñòðóìåíòèðîâàíèå CheckMatchFormat
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ Default                    [16:38:55.197]
+[TESTER] Loading modules for test.                          [16:38:55.197]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:55.197]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckMatchFormat>                      [16:38:55.199]
+[CMD] 10-CheckMatchFormat-1 : Send <unit>                   [16:38:55.199]
+  Message: Kernel.System.MatchFormat<65551>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:55.199]
+  Arguments: 2
+  -> Arguments[0] - Format - : "\2w"
+  -> Arguments[1] - Source - : ""
+[CMD] 10-CheckMatchFormat-2 : Receive <unit>                [16:38:55.199]
+  Message: Kernel.System.MatchFormatAnswer<65552>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:55.199]
+  Arguments: 2
+  -> Arguments[0] - MatchResult - : 1
+  -> Arguments[1] - Result - : Array[0] : {}
+[CMD] 10-CheckMatchFormat-3 : Receive <unit>                [16:38:55.202]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:55.199]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65551 (Kernel.System.MatchFormat)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:55.402]
+[HOST] Exit with code 0[16:38:55.406]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:55.429]
+[HOST] Starting application..[16:38:55.430]
+[HOST] Application started successfully.[16:38:55.435]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.6.01-Test-010.utx
+                                                            [16:38:55.447]
+[TESTER] Checking test script.                              [16:38:55.447]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckMatchFormat.utx
+Èíñòðóìåíòèðîâàíèå CheckMatchFormat
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ EmptyFormat                [16:38:55.448]
+[TESTER] Loading modules for test.                          [16:38:55.448]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:55.448]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckMatchFormat>                      [16:38:55.449]
+[CMD] 10-CheckMatchFormat-1 : Send <unit>                   [16:38:55.449]
+  Message: Kernel.System.MatchFormat<65551>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:55.449]
+  Arguments: 2
+  -> Arguments[0] - Format - : ""
+  -> Arguments[1] - Source - : "abc"
+[CMD] 10-CheckMatchFormat-2 : Receive <unit>                [16:38:55.450]
+  Message: Kernel.System.MatchFormatAnswer<65552>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:55.449]
+  Arguments: 2
+  -> Arguments[0] - MatchResult - : 1
+  -> Arguments[1] - Result - : Array[0] : {}
+[CMD] 10-CheckMatchFormat-3 : Receive <unit>                [16:38:55.451]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:55.449]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65551 (Kernel.System.MatchFormat)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:55.652]
+[HOST] Exit with code 0[16:38:55.658]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:55.676]
+[HOST] Starting application..[16:38:55.677]
+[HOST] Application started successfully.[16:38:55.681]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.6.01-Test-010.utx
+                                                            [16:38:55.691]
+[TESTER] Checking test script.                              [16:38:55.692]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckMatchFormat.utx
+Èíñòðóìåíòèðîâàíèå CheckMatchFormat
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ PatternSpecial             [16:38:55.692]
+[TESTER] Loading modules for test.                          [16:38:55.692]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:55.692]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckMatchFormat>                      [16:38:55.693]
+[CMD] 10-CheckMatchFormat-1 : Send <unit>                   [16:38:55.694]
+  Message: Kernel.System.MatchFormat<65551>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:55.694]
+  Arguments: 2
+  -> Arguments[0] - Format - : "1234	-\4d-\4w"
+  -> Arguments[1] - Source - : "1234	-5678-ABCd"
+[CMD] 10-CheckMatchFormat-2 : Receive <unit>                [16:38:55.694]
+  Message: Kernel.System.MatchFormatAnswer<65552>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:55.694]
+  Arguments: 2
+  -> Arguments[0] - MatchResult - : 0
+  -> Arguments[1] - Result - : Array[2] : {5678, ABCd}
+[CMD] 10-CheckMatchFormat-3 : Receive <unit>                [16:38:55.695]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:55.694]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65551 (Kernel.System.MatchFormat)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:55.897]
+[HOST] Exit with code 0[16:38:55.902]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:55.919]
+[HOST] Starting application..[16:38:55.920]
+[HOST] Application started successfully.[16:38:55.924]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.6.01-Test-010.utx
+                                                            [16:38:55.934]
+[TESTER] Checking test script.                              [16:38:55.934]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckMatchFormat.utx
+Èíñòðóìåíòèðîâàíèå CheckMatchFormat
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ SourceSpecial              [16:38:55.935]
+[TESTER] Loading modules for test.                          [16:38:55.935]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:55.935]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckMatchFormat>                      [16:38:55.937]
+[CMD] 10-CheckMatchFormat-1 : Send <unit>                   [16:38:55.937]
+  Message: Kernel.System.MatchFormat<65551>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:55.937]
+  Arguments: 2
+  -> Arguments[0] - Format - : "1234-\4d-\4w"
+  -> Arguments[1] - Source - : "1234-567	-ABCd"
+[CMD] 10-CheckMatchFormat-2 : Receive <unit>                [16:38:55.937]
+  Message: Kernel.System.MatchFormatAnswer<65552>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:55.937]
+  Arguments: 2
+  -> Arguments[0] - MatchResult - : 1
+  -> Arguments[1] - Result - : Array[0] : {}
+[CMD] 10-CheckMatchFormat-3 : Receive <unit>                [16:38:55.939]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:55.937]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65551 (Kernel.System.MatchFormat)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:56.143]
+[HOST] Exit with code 0[16:38:56.149]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:56.169]
+[HOST] Starting application..[16:38:56.170]
+[HOST] Application started successfully.[16:38:56.173]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.6.01-Test-010.utx
+                                                            [16:38:56.186]
+[TESTER] Checking test script.                              [16:38:56.187]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckMatchFormat.utx
+Èíñòðóìåíòèðîâàíèå CheckMatchFormat
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ Success                    [16:38:56.188]
+[TESTER] Loading modules for test.                          [16:38:56.188]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:56.189]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckMatchFormat>                      [16:38:56.189]
+[CMD] 10-CheckMatchFormat-1 : Send <unit>                   [16:38:56.189]
+  Message: Kernel.System.MatchFormat<65551>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:56.189]
+  Arguments: 2
+  -> Arguments[0] - Format - : "1234-\4d-\4w"
+  -> Arguments[1] - Source - : "1234-5678-ABCd"
+[CMD] 10-CheckMatchFormat-2 : Receive <unit>                [16:38:56.190]
+  Message: Kernel.System.MatchFormatAnswer<65552>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:56.189]
+  Arguments: 2
+  -> Arguments[0] - MatchResult - : 0
+  -> Arguments[1] - Result - : Array[2] : {5678, ABCd}
+[CMD] 10-CheckMatchFormat-3 : Receive <unit>                [16:38:56.192]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:56.189]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65551 (Kernel.System.MatchFormat)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:56.392]
+[HOST] Exit with code 0[16:38:56.396]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:56.417]
+[HOST] Starting application..[16:38:56.419]
+[HOST] Application started successfully.[16:38:56.423]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.7.01-Test-010.utx
+                                                            [16:38:56.439]
+[TESTER] Checking test script.                              [16:38:56.440]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckGetLength.utx
+Èíñòðóìåíòèðîâàíèå CheckGetLength
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ Default                    [16:38:56.441]
+[TESTER] Loading modules for test.                          [16:38:56.441]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:56.441]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckGetLength>                        [16:38:56.443]
+[CMD] 10-CheckGetLength-1 : Send <unit>                     [16:38:56.443]
+  Message: Kernel.System.GetLength<65553>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:56.443]
+  Arguments: 1
+  -> Arguments[0] - Source - : "Abc"
+[CMD] 10-CheckGetLength-2 : Receive <unit>                  [16:38:56.445]
+  Message: Kernel.System.GetLengthAnswer<65554>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:56.443]
+  Arguments: 1
+  -> Arguments[0] - Result - : 3
+[CMD] 10-CheckGetLength-3 : Receive <unit>                  [16:38:56.445]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:56.443]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65553 (Kernel.System.GetLength)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:56.646]
+[HOST] Exit with code 0[16:38:56.651]
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+[HOST] Loading core..[16:38:56.670]
+[HOST] Starting application..[16:38:56.671]
+[HOST] Application started successfully.[16:38:56.674]
+[TESTER] Loading:w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\C01.7.01-Test-010.utx
+                                                            [16:38:56.684]
+[TESTER] Checking test script.                              [16:38:56.684]
+Çàãðóçêà w:\workspace_ucb\Uniteller\Framework\Kernel\System\t0262\tests\auto\Include\CheckGetLength.utx
+Èíñòðóìåíòèðîâàíèå CheckGetLength
+[TESTER] Àêòèâàöèÿ íàáîðà äàííûõ Empty                      [16:38:56.685]
+[TESTER] Loading modules for test.                          [16:38:56.685]
+······································································ 0%
+[TESTER] Loading Uniteller.Framework.Kernel.System as unit, generation: 1
+                                                            [16:38:56.685]
+»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»» 100%
+[CMD] 10 : DumpCall <CheckGetLength>                        [16:38:56.686]
+[CMD] 10-CheckGetLength-1 : Send <unit>                     [16:38:56.686]
+  Message: Kernel.System.GetLength<65553>
+  Source: master
+  Target: unit
+  Send time: [2017.03.28 16:38:56.686]
+  Arguments: 1
+  -> Arguments[0] - Source - : ""
+[CMD] 10-CheckGetLength-2 : Receive <unit>                  [16:38:56.687]
+  Message: Kernel.System.GetLengthAnswer<65554>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:56.686]
+  Arguments: 1
+  -> Arguments[0] - Result - : 0
+[CMD] 10-CheckGetLength-3 : Receive <unit>                  [16:38:56.688]
+  Message: Kernel.StateChanged<5>
+  Source: unit
+  Target: master
+  Send time: [2017.03.28 16:38:56.686]
+  Arguments: 4
+  -> Arguments[0] - Event - : 65553 (Kernel.System.GetLength)
+  -> Arguments[1] - MachineName - : "Uniteller.Framework.Kernel.System"
+  -> Arguments[2] - NewState - : "Idle"
+  -> Arguments[3] - OldState - : "Idle"
+[TEST SCRIPT COMPLETED]
+[HOST] Unloading core..[16:38:56.888]
+[HOST] Exit with code 0[16:38:56.892]

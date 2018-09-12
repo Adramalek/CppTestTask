@@ -1,0 +1,18 @@
+; MicroKernel Ide generated resource script.
+; 
+<root> : Uniteller\ImageInfo
+Uniteller.InterchangeFormats.Kernel.System
+  Comments : "Собрано 2017.03.28 16:27:46 из ревизии 29334. Цель: t0262. Поколение: 1. Тип сборки: Release."
+  CompanyName : "Uniteller"
+  FileDescription : "Uniteller.InterchangeFormats.Kernel.System"
+  FileVersion : "1.0.0.29334"
+  Component: Uniteller.InterchangeFormats.Kernel.System
+  Goal: t0262
+  InternalName : "Uniteller.InterchangeFormats.Kernel.System"
+  LegalCopyright : "Copyright (C) Uniteller, 2013-2016. All rights reserved."
+  LegalTrademarks : "Продукт Uniteller.Service.EftposStandard.Terminal"
+  OriginalFilename : "Uniteller.InterchangeFormats.Kernel.System.utc"
+  ProductName : "Uniteller.Service.EftposStandard.Terminal"
+  ProductVersion : "20170328162413 Win32"
+  ProductGoal : "t0829"
+

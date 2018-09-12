@@ -1,0 +1,323 @@
+#pragma once
+
+#include <vector>
+#include <list>
+#include <unordered_map>
+
+#ifdef _GLIBCXX_MAP
+#define _MAP_
+#endif
+
+namespace Linq
+{
+
+  template <class T>
+  inline void CleanExportableCollection(std::vector<T> & container)
+  {
+    typename std::vector<T>::const_iterator i = container.begin();
+    typename std::vector<T>::const_iterator e = container.end();
+    while (i!=e)
+    {
+      (*i)->Release();
+      ++i;
+    }
+    container.clear();
+  }
+
+  template <class X, class Y>
+  inline void CleanExportableCollection(std::list<std::pair<X,Y>> & container)
+  {
+    typename std::list<std::pair<X,Y>>::const_iterator i = container.begin();
+    typename std::list<std::pair<X,Y>>::const_iterator e = container.end();
+    while (i!=e)
+    {
+      i->second->Release();
+      ++i;
+    }
+    container.clear();
+  }
+
+  template <class T>
+  inline void DestroyCollection(std::vector<T> & container)
+  {
+    typename std::vector<T>::const_iterator i = container.begin();
+    typename std::vector<T>::const_iterator e = container.end();
+    while (i!=e)
+    {
+      delete (*i);
+      ++i;
+    }
+    container.clear();
+  }
+
+  template <class T>
+  inline void DestroyCollection(std::list<T> & container)
+  {
+    typename std::list<T>::const_iterator i = container.begin();
+    typename std::list<T>::const_iterator e = container.end();
+    while (i!=e)
+    {
+      delete (*i);
+      ++i;
+    }
+    container.clear();
+  }
+
+  template <class Key, class Value>
+  inline void DestroyCollection(std::unordered_map<Key, Value *> & container)
+  {
+    typename std::unordered_map<Key, Value *>::const_iterator i = container.begin();
+    typename std::unordered_map<Key, Value *>::const_iterator e = container.end();
+    while (i!=e)
+    {
+      delete (i->second);
+      ++i;
+    }
+    container.clear();
+  }
+
+  template <class Key, class Value>
+  inline void DestroyCollection(std::unordered_map<Key, std::list<Value *>> & container)
+  {
+    typename std::unordered_map<Key, std::list<Value *>>::iterator i = container.begin();
+    typename std::unordered_map<Key, std::list<Value *>>::const_iterator e = container.end();
+    while (i!=e)
+    {
+      DestroyCollection<Value *>(i->second);
+      ++i;
+    }
+    container.clear();
+  }
+
+#ifdef _MAP_
+  template <class key, class T>
+  inline void CleanExportableMap(std::map<key, T *> & container)
+  {
+    typename std::map<key, T *>::iterator i = container.begin();
+    typename std::map<key, T *>::const_iterator e = container.end();
+    while (i!=e)
+    {
+      i->second->Release();
+      ++i;
+    }
+    container.clear();
+  }
+#endif
+
+  template <class Key, class Value>
+  inline void CleanExportableMap(std::unordered_map<Key, Value *> & container)
+  {
+    typename std::unordered_map<Key, Value *>::const_iterator i = container.begin();
+    typename std::unordered_map<Key, Value *>::const_iterator e = container.end();
+    while (i!=e)
+    {
+      i->second->Release();
+      ++i;
+    }
+    container.clear();
+  }
+
+  template <class Key, class X, class Y>
+  inline void CleanExportableMap(std::unordered_map<Key, std::pair<X, Y *>> & container)
+  {
+    typename std::unordered_map<Key, std::pair<X, Y *>>::const_iterator i = container.begin();
+    typename std::unordered_map<Key, std::pair<X, Y *>>::const_iterator e = container.end();
+    while (i!=e)
+    {
+      i->second.second->Release();
+      ++i;
+    }
+    container.clear();
+  }
+
+#ifdef _MAP_
+  template <class key, class T>
+  inline void CleanPointerMap(std::map<key, T *> & container)
+  {
+    typename std::map<key, T *>::const_iterator i = container.begin();
+    typename std::map<key, T *>::const_iterator e = container.end();
+    while (i!=e)
+    {
+      delete i->second;
+      ++i;
+    }
+    container.clear();
+  }
+#endif
+
+  template <class T>
+  inline void CleanNullableCollection(std::vector<T *> & container)
+  {
+    typename std::vector<T*>::const_iterator i = container.begin();
+    typename std::vector<T*>::const_iterator e = container.end();
+    while (i!=e)
+    {
+      T * p = *i;
+      if (p)
+        p->Release();
+      ++i;
+    }
+    container.clear();
+  }
+
+#ifdef _MAP_
+  template <class Key, class Value>
+  inline void CleanNullableCollection(std::map<Key, Value *> & container)
+  {
+    typename std::map<Key, Value *>::const_iterator i = container.begin();
+    typename std::map<Key, Value *>::const_iterator e = container.end();
+    while (i!=e)
+    {
+      Value * p = i->second;
+      if (p)
+        p->Release();
+      ++i;
+    }
+    container.clear();
+  }
+
+  template <class Key, class Value>
+  class map : public std::map<Key, Value>
+  {
+  public:
+    const std::pair<Key, Value> & FindValue(const Value & value) const
+    {
+      typename std::map<Key, Value>::const_iterator i = std::map<Key, Value>::begin();
+      typename std::map<Key, Value>::const_iterator e = std::map<Key, Value>::end();
+      while (i != e)
+      {
+        if (i->second == value)
+          return *i;
+        ++i;
+      }
+    }    
+    const Key & FindKeyByValue(const Value & value, const Key & dflt) const
+    {
+      typename std::map<Key, Value>::const_iterator i = std::map<Key, Value>::begin();
+      typename std::map<Key, Value>::const_iterator e = std::map<Key, Value>::end();
+      while (i != e)
+      {
+        if (i->second == value)
+          return i->first;
+        ++i;
+      }
+      return dflt;
+    }
+  };
+
+  template <class Key, class Value>
+  class association_list : public std::list<std::pair<Key, Value>>
+  {
+  public:
+    const std::pair<Key, Value> & FindByValue(const Value & value) const
+    {
+      typename std::list<std::pair<Key, Value>>::const_iterator i = std::list<std::pair<Key, Value>>::begin();
+      typename std::list<std::pair<Key, Value>>::const_iterator e = std::list<std::pair<Key, Value>>::end();
+      while (i != e)
+      {
+        if (i->second == value)
+          return *i;
+        ++i;
+      }
+    }    
+    const Key & FindKeyByValue(const Value & value, const Key & dflt) const
+    {
+      typename std::list<std::pair<Key, Value>>::const_iterator i = std::list<std::pair<Key, Value>>::begin();
+      typename std::list<std::pair<Key, Value>>::const_iterator e = std::list<std::pair<Key, Value>>::end();
+      while (i != e)
+      {
+        if (i->second == value)
+          return i->first;
+        ++i;
+      }
+      return dflt;
+    }
+  };
+
+#endif
+
+  template <class T>
+  inline void ForEach(void(*Action)(const T &), const std::vector<T> & container)
+  {
+    
+  }
+
+  template <class T, class X>
+  inline void ForEach(void(*Action)(const T &, X), const std::vector<T> & container, X x)
+  {
+    typename std::vector<T>::const_iterator i = container.begin();
+    typename std::vector<T>::const_iterator e = container.end();
+    while (i!=e)
+    {      
+      Action(*i,x);
+      ++i;
+    }    
+  }
+
+  template <class T, class X>
+  inline void ForEach(void(*Action)(const T &, X), const std::list<T> & container, X x)
+  {
+    typename std::list<T>::const_iterator i = container.begin();
+    typename std::list<T>::const_iterator e = container.end();
+    while (i!=e)
+    {      
+      Action(*i,x);
+      ++i;
+    }    
+  }
+
+
+  template <class Key, class T>
+  static inline T * FindFirst(const std::unordered_map<Key, T *> & container, const bool (T::*Selector)() const)
+  {
+    typename std::unordered_map<Key, T *>::const_iterator i = container.begin();
+    typename std::unordered_map<Key, T *>::const_iterator e = container.end();
+    while (i!=e)
+    {      
+      if ((i->second->*Selector)())
+      {
+        return i->second;
+      }
+      ++i;
+    }
+    return NULL;
+  } 
+  
+} // namespace Linq
+
+/*
+namespace Uniteller
+{
+  namespace Framework
+  {
+    namespace Kernel
+    {
+
+      template <class T>
+      class exportable_vector : public std::vector<T>
+      {
+      public:
+        
+      };
+      
+    };
+    
+  };
+  
+};
+
+
+      //template <class T, typename Selector>
+      //static inline T * FindFirst(const std::unordered_map<std::string, T *> & container, Selector selector)
+      //{
+      //  for (const auto & state : container)
+      //  {
+      //    if ((state.second->*selector)())
+      //    {
+      //      return state.second;
+      //    }
+      //  }
+      //  return NULL;
+      //}      //FindFirst(m_States, &IState::GetIsStartState);
+*/
+

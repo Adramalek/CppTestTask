@@ -1,0 +1,12 @@
+;учебный скрипт дл€ изучени€ команды Send (широковещательна€ отправка)
+Modules ; —писок модулей, которые будут загружены дл€ тестировани€
+  Module1 : Uniteller.Framework.Kernel.Tester.Responder ; «агружаемый дл€ тестировани€ модуль (Responder)
+Script ; »сполн€емый скрипт
+  1 : Send <*> ; Ўаг первый, команда Send; адресат * означает, что сообщение получат все кроме тестера
+    Kernel.Console.Write : 1
+      Value : "Hello, World!"
+  ; конец первого шага
+  3 : Receive <Module1> ; шаг второй - команда Receive; принимаем от Module1
+    Kernel.Console.Write : 1
+      Value : "Hello, World!"
+; конец второго шага

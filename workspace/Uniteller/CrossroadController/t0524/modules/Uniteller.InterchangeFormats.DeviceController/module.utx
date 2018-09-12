@@ -1,0 +1,14 @@
+;  Метаданные тестового модуля 
+; Версия: 1.0.0
+; Поколение: 1
+;
+; Описание тестового модуля в бинарных образах
+<root>: Uniteller\Images
+Uniteller.InterchangeFormats.DeviceController
+  Description : Модуль управления светофором
+  Version : 1.0.0  ; Версия
+  Generations : {1}     ; Поддерживаемые модулем поколения    
+  Module : Uniteller.InterchangeFormats.DeviceController.utc
+  Dependencies ; Зависимости  
+
+  

@@ -1,0 +1,83 @@
+; Тест C01.3.01-Test-010
+Head ; Заголовок теста
+  Name: C01.3.01-Test-010
+  Goal: ; Цель теста
+    Пустая строка в Source
+  References: ; Ссылки на пункты чек-листа
+    C01.3.01 ; Пустая строка в Source
+    C01.3.02 ; Пустая строка в Delim
+    C01.3.03 ; Строка Source совпала с Delim
+    C01.3.04 ; Строка Source не содержит Delim
+    C01.3.05 ; Строка Source начинается с Delim
+    C01.3.06 ; Строка Source оканчивается Delim
+    C01.3.07 ; успешное разделение строки
+Modules ; Модули, загружаемые для тестирования
+  unit : Uniteller.Framework.Kernel.System
+    Generation : 1
+    Protocols ; Требуем поддержку пречисленных ниже протоколов
+      Kernel.System : 1
+Datasets  ; Наборы данных
+  Default
+    Machine :             [Machine]             ; Имя машины состояний
+    Source : ""
+    Delim : "."
+    Mode : <DelimMode.AnyOf>
+    Head : ""
+    Tail : ""
+    Status : <UnpackAnswerStatus.Error>
+  EmptyDelim
+    Source : "abc"
+    Delim : ""
+    Mode : <DelimMode.AnyOf>
+    Head : ""
+    Tail : ""
+    Status : <UnpackAnswerStatus.Error>
+  SourceEqualDelim
+    Source : "abc"
+    Delim : "abc"
+    Mode : <DelimMode.AnyOf>
+    Head : ""
+    Tail : ""
+    Status : <UnpackAnswerStatus.IsDivider>
+  NoDelim
+    Source : "abc"
+    Delim : "123"
+    Mode : <DelimMode.AnyOf>
+    Head : "abc"
+    Tail : ""
+    Status : <UnpackAnswerStatus.NoTail>
+  StartsWith
+    Source : ".utx"
+    Delim : "."
+    Mode : <DelimMode.AnyOf>
+    Head : ""
+    Tail : "utx"
+    Status : <UnpackAnswerStatus.NoHead>
+  EndsWith
+    Source : "file."
+    Delim : "."
+    Mode : <DelimMode.AnyOf>
+    Head : "file"
+    Tail : ""
+    Status : <UnpackAnswerStatus.NoTail>
+  Success
+    Source : "file.utc"
+    Delim : "."
+    Mode : <DelimMode.AnyOf>
+    Head : "file"
+    Tail : "utc"
+    Status : <UnpackAnswerStatus.Success>
+Script    ; Скрипт тестирования
+  ; Инициализация модуля и подготовка его к работе
+  10: Call <CheckUnpackFirst>
+    Unit : <unit>
+    Machine : <Machine>
+    OldState : Idle
+    NewState : Idle
+    Event : <Kernel.System.UnpackFirst>
+    Source : <Source>
+    Delim : <Delim>
+    Mode : <Mode>
+    Status : <Status>
+    Head : <Head>
+    Tail : <Tail>

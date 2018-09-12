@@ -1,0 +1,27 @@
+Goal:
+  Обеспечивает проверку работы команды ReplaceAll (позитивный сценарий)
+Procedure: CheckReplaceAll
+  Unit    | Тестируемый модуль
+  Machine : "System" | Имя машины состояний Kernel.System
+  OldState | Старое состояние машины
+  NewState | Старое состояние машины
+  Event : Kernel.System.ReplaceAll | Событие, активировавшее StateChange
+  Source | Строка, в которой будет осуществляться замена вхождений подстроки Pattern значениями Value
+  Pattern | Строка для поиска
+  Value | Строка для вставки
+  Result | Результат выполнения команды ReplaceAll
+Script  ; Тело процедуры
+  1 : Send <Unit>
+    Kernel.System.ReplaceAll : 1
+      Source : <Source>
+      Pattern : <Pattern>
+      Value : <Value>
+  2 : Receive <Unit>
+    Kernel.System.ReplaceAllAnswer : 1
+      Result : <Result>
+  3 : Receive <Unit>
+    Kernel.StateChanged : 1     ; Событие, присылаемое в момент изменения состояния конечного автомата
+      MachineName : <Machine>   ; - Имя конечного автомата перешедшего в новое состояние
+      OldState : <OldState>     ; - Старое состояние машины
+      NewState : <NewState>     ; - Новое состояние машины
+      Event : <Event> ; - Событие, активировавшее переход

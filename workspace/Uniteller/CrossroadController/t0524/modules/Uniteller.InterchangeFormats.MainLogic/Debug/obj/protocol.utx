@@ -1,0 +1,13 @@
+; Описание протокола для CrossroadController, первая версия
+<root> : Kernel\Protocols
+MainLogic : 101
+  Namespace : Uniteller.MainLogic
+  Generations : { 1 }
+  Enumerations ; Перечислимые типы
+  Messages ; Сообщения
+    Start : 1           | Включить цикл работы светофора
+      1 : 0
+    Shutdown : 2        | Выгрузить управляющую логику
+      1 : 0
+    ProblemDetected : 3 | Проблема в работе светофора
+      1 : 0

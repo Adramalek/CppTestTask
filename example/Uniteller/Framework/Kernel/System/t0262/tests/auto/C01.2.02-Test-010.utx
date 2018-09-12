@@ -1,0 +1,34 @@
+; Тест C01.2.02-Test-010
+Head ; Заголовок теста
+  Name: C01.2.01-Test-010
+  Goal: ; Цель теста
+    Разбить строку по разделителю
+  References: ; Ссылки на пункты чек-листа
+    C01.2.06 ; Успешно разбить строку по символу
+Modules ; Модули, загружаемые для тестирования
+  unit : Uniteller.Framework.Kernel.System
+    Generation : 1
+    Protocols ; Требуем поддержку пречисленных ниже протоколов
+      Kernel.System : 1
+Datasets  ; Наборы данных
+  Default
+    Machine :             [Machine]             ; Имя машины состояний
+    Source : [Strings.Value1]
+    Delim : " "
+    Mode : <DelimMode.AnyOf>
+    AllowEmpty : True
+    Result : {"Строка", "с", "несколькими", "пробелами"}
+Script    ; Скрипт тестирования
+  ; Инициализация модуля и подготовка его к работе
+  10: Call <CheckSplit>
+    Unit : <unit>
+    Machine : <Machine>
+    OldState : Idle
+    NewState : Idle
+    Event : <Kernel.System.Split>
+    Source : <Source>
+    Delim : <Delim>
+    Mode : <Mode>
+    AllowEmpty : <AllowEmpty>
+    Result : <Result>
+

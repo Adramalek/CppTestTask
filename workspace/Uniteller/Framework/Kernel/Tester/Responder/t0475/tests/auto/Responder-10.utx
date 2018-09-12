@@ -1,0 +1,31 @@
+; учебный скрипт для изучения перечислимого типа переменных
+Modules
+  Module1 : Uniteller.Framework.Kernel.Tester.Responder
+    Generation : 2 ; явно указываем, что загружаем модуль 2-го поколения, т. к. AdvancedMode появилось во 2-м поколении 
+Script
+  1 : Send <Module1>
+    Kernel.Tester.Responder.MessageExample : 1
+  2 : Receive <Module1> ; шаг второй - команда Receive; принимаем от Module1
+    Kernel.Tester.Responder.MessageExample : 1 ; событие MessageExample протокола Kernel.Tester.Responder первого поколения
+  3 : Receive <Module1> ; принимаем от Module1
+    Kernel.StateChanged : 1 ; событие StateChanged протокола Kernel первого поколения
+      MachineName : Uniteller.Framework.Kernel.Tester.Responder ; сравниваем аргумент события MachineName с константой (Uniteller.Framework.Kernel.Tester.Responder)
+      OldState : * ; игнорируем контроль значения аргумента OldState (* - любое значение), но убеждаемся что сам аргумент в сообщении есть
+      NewState : Idle ; сравниваем значение аргумента NewState с константой (Idle)
+      Event : <Kernel.Tester.Responder.MessageExample> ; переход вызван событием Kernel.Tester.Responder.MessageExample 
+  4 : Send <Module1> ; отправляем следующую инструкцию модулю Responder
+    Kernel.Tester.Responder.SetResponderMode : 2 ; это инструкция SetResponderMode протокола Kernel.Tester.Responder 2-го поколения
+      Mode : <AnswerMode.Fail> ; параметр Mode перечислимого типа задаём в явном виде, режим ответа - Fail
+  5 : Receive <Module1> ; принимаем сообщение StateChanged для контроля состояния конечного автомата респондера
+    Kernel.StateChanged : 1
+      MachineName : *
+      OldState : *
+      NewState : *
+      Event : *
+  6 : Send <Module1> ; отправляем MessageExample, чтобы проверить ответ на него
+    Kernel.Tester.Responder.MessageExample : 1
+  7 : Receive <Module1> ; в соответствии с 
+;   Kernel.Tester.Responder.MessageExample : 1 ; получение отосланного MessageExample, сейчас эта строка закомментирована
+    Kernel.ModuleFailedOnEvent : 1 ; в соответствии с включённым режимом ответа (Fail) состояния AdvancedMode, модуль-ответчик эмулирует падение
+; при котором от ядра приходит соответствующее сообщение, которое мы проверили
+; конец скрипта	  

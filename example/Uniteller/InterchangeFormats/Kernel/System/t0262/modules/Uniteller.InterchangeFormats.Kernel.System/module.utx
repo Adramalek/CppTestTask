@@ -1,0 +1,13 @@
+; Метаданные микро-ядра
+; Версия: 1.0.0
+; Поколение: 1
+;
+; Описание ядра в бинарных образах
+<root>: Uniteller\Images
+Uniteller.InterchangeFormats.Kernel.System
+  Version : 1.0.0  ; Версия
+  Generations : {1}     ; Поддерживаемые модулем поколения    
+  Module : Uniteller.InterchangeFormats.Kernel.System.dll
+  Dependencies ; Зависимости    
+    Uniteller.InterchangeFormats.Kernel : 1
+

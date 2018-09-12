@@ -1,0 +1,18 @@
+; MicroKernel Ide generated resource script.
+; 
+<root> : Uniteller\ImageInfo
+Uniteller.InterchangeFormats.Kernel
+  Comments : "Собрано 2016.07.26 11:06:42 из ревизии . Цель: t0500. Поколение: 1. Тип сборки: Release."
+  CompanyName : "Uniteller"
+  FileDescription : "Uniteller.InterchangeFormats.Kernel"
+  FileVersion : "1.0.0."
+  Component: Uniteller.InterchangeFormats.Kernel
+  Goal: t0500
+  InternalName : "Uniteller.InterchangeFormats.Kernel"
+  LegalCopyright : "Copyright (C) Uniteller, 2013-2016. All rights reserved."
+  LegalTrademarks : "Продукт Uniteller.ComponentBuilder"
+  OriginalFilename : "Uniteller.InterchangeFormats.Kernel.utc"
+  ProductName : "Uniteller.ComponentBuilder"
+  ProductVersion : "20160726110742 Linux"
+  ProductGoal : "t0592"
+

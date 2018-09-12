@@ -1,0 +1,27 @@
+Start logging action: Converting
+File: C:\Users\User\Downloads\TestWorkspace_Win32\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.InterchangeFormats.MainLogic\protocol.utx
+Parameter: 
+
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+
+
+[HOST] Loading core..[20:12:32.455]
+[HOST] Starting application..[20:12:32.460]
+[HOST] Application started successfully.[20:12:32.471]
+[GENERATOR] Анализ параметров командной строки[ OK ]
+[GENERATOR] Loading: C:\Users\User\Downloads\TestWorkspace_Win32\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.InterchangeFormats.MainLogic\protocol.utx[ OK ]
+[GENERATOR] Parsing UniText format[ OK ]
+Блоков 1
+[GENERATOR] Анализ блока 0[ OK ]
+Переход к следующему протоколу
+Экспорт протокола
+Экспорт Uniteller.MainLogic
+Закрытие файла
+Файл сохранен
+Переход к следующему протоколу
+Экспорт протокола
+[HOST] Unloading core..[20:12:33.173]
+[HOST] Exit with code 0[20:12:33.185]
+

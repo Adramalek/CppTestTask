@@ -1,0 +1,6 @@
+; Метаданные тестового модуля 
+<root>: Kernel\Targets
+1 : CrossroadController
+  S01: Обеспечение функций работы с SVN
+    Описание: @nonutx
+      

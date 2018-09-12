@@ -1,0 +1,61 @@
+; Тест C01.6.01-Test-010
+Head ; Заголовок теста
+  Name: C01.6.01-Test-010
+  Goal: ; Цель теста
+    Проверить соответствие строки формату
+  References: ; Ссылки на пункты чек-листа
+    C01.6.01 ; Строка Source пуста
+    C01.6.02 ; Строка Format пуста
+    C01.6.03 ; Строка Source непуста, строка Format непуста
+    C01.6.04 ; Спец. символы в строке Source
+    C01.6.05 ; Спец. символы в строке Format
+    C01.6.06 ; Некорректный формат
+Modules ; Модули, загружаемые для тестирования
+  unit : Uniteller.Framework.Kernel.System
+    Generation : 1
+    Protocols ; Требуем поддержку пречисленных ниже протоколов
+      Kernel.System : 1
+Datasets  ; Наборы данных
+  Default
+    Machine :             [Machine]             ; Имя машины состояний
+    Source : ""
+    Format : "\\2w"
+    MatchResult : <Matching.Fail>
+    Result : {}
+  EmptyFormat 
+    Source : "abc"
+    Format : ""
+    MatchResult : <Matching.Fail>
+    Result : {}
+  Success
+    Source : "1234-5678-ABCd"
+    Format : "1234-\\4d-\\4w"
+    MatchResult : <Matching.Success>
+    Result : {"5678", "ABCd"}
+  SourceSpecial
+    Source : "1234-567\x09-ABCd" ;tab
+    Format : "1234-\\4d-\\4w"
+    MatchResult : <Matching.Fail>
+    Result : {}
+  PatternSpecial
+    Source : "1234\x09-5678-ABCd"
+    Format : "1234\x09-\\4d-\\4w"
+    MatchResult : <Matching.Success>
+    Result : {"5678", "ABCd"}
+  BadFormat
+    Source : "12345678"
+    Format : "\\0w-\\d"
+    MatchResult : <Matching.WrongFormat>
+    Result : {}
+Script    ; Скрипт тестирования
+; Инициализация модуля и подготовка его к работе
+  10: Call <CheckMatchFormat>
+    Unit : <unit>
+    Machine : <Machine>
+    OldState : Idle
+    NewState : Idle
+    Event : <Kernel.System.MatchFormat>
+    Source : <Source>
+    Format : <Format>
+    MatchResult : <MatchResult>
+    Result : <Result>

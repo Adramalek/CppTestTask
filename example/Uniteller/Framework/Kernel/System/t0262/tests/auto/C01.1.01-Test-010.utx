@@ -1,0 +1,55 @@
+; Тест C01.1.01-Test-010
+Head ; Заголовок теста
+  Name: Заменить одну строку другой
+  Goal: ; Цель теста
+    Пустая строка в Source
+  References: ; Ссылки на пункты чек-листа
+    C01.1.01 ; Пустая строка в Source
+    C01.1.02 ; Пустая строка в Pattern
+    C01.1.03 ; Пустая строка в Value
+    C01.1.04 ; Наличие спецсимволов в Source/Pattern/Value
+    C01.1.05 ; Обычная замена подстроки
+Modules ; Модули, загружаемые для тестирования
+  unit : Uniteller.Framework.Kernel.System
+    Generation : 1
+    Protocols ; Требуем поддержку пречисленных ниже протоколов
+      Kernel.System : 1
+Datasets  ; Наборы данных
+  Default
+    Machine :             [Machine]             ; Имя машины состояний
+    Source : ""
+    Pattern : "abc"
+    Value : "123"
+    Result : ""
+  EmptyPattern
+    Source : "abc"
+    Pattern : ""
+    Value : "123"
+    Result : "abc"
+  EmptyValue
+    Source : "abc"
+    Pattern : "123"
+    Value : ""
+    Result : "abc"
+  SpecialSymbols
+    Source : "abc\x09"
+    Pattern : "a"
+    Value : "\x09" ;tab
+    Result : "\x09bc\x09"
+  NormalReplace
+    Source : "This is pattern string"
+    Pattern : "pattern"
+    Value : "value"
+    Result : "This is value string"
+Script    ; Скрипт тестирования
+  ; Инициализация модуля и подготовка его к работе
+  10: Call <CheckReplaceAll>
+    Unit : <unit>
+    Machine : <Machine>
+    OldState : Idle
+    NewState : Idle
+    Event : <Kernel.System.ReplaceAll>
+    Source : <Source>
+    Pattern : <Pattern>
+    Value : <Value>
+    Result : <Result>
