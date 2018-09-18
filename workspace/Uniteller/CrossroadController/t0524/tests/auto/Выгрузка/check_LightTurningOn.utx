@@ -1,0 +1,14 @@
+;Чек-лист сценария "Выгрузка". Выгрузка из состояния LightTurningOn. 
+Modules
+  Crossroad : Uniteller.CrossroadController
+    Generation : 1
+Script
+  1 : Send <Crossroad>
+    Uniteller.InterchangeFormats.Kernel.Start : 1
+  2 : Send <Crossroad>
+    Uniteller.InterchangeFormats.MainLogic.Start : 1
+  3 : Receive <Crossroad>
+    Uniteller.InterchangeFormats.DeviceController.SetLight : 1
+      Color : Uniteller.InterchangeFormats.DeviceController.ColorType.Red
+  4 : Send <Crossroad>
+    Uniteller..InterchangeFormats.Kernel.Stop : 1

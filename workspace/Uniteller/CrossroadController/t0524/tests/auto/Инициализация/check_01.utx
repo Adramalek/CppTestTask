@@ -1,0 +1,9 @@
+;Пункт 02 чек-листа сценария "Инициализация" 
+Modules
+  Crossroad : Uniteller.CrossroadController
+    Generation : 1
+Script
+  1 : Send <Crossroad>
+    Uniteller.InterchangeFormats.Kernel.Start : 1
+  2 : Send <Crossroad>
+    Uniteller.InterchangeFormats.Kernel.Stop : 1
