@@ -17,57 +17,39 @@ namespace Uniteller
 
       BEGIN_PROTOCOL(101, 1)
         
-        #pragma region Enumerations
-        /// <summary> 
-        /// Цвет сигнала светофора. Длительность сигнала определяется цветом.
-        /// </summary>
-        enum class ColorType
-        {
-          Green = 40, // - Зелёный цвет, 40 секунд.
-          Red = 30, // - Красный цвет, 30 секунд.
-          Yellow = 5 // - Жёлтый цвет, 5 секунд.
-        };
-        
-        /// <summary>
-        /// Валидатор корректности значения для перечислимого типа ColorType
-        /// </summary>
-        inline bool IsValidColorTypeValue(const int value)
-        {
-          return ((value >= 5)&&(value < 6)) || ((value >= 30)&&(value < 31)) || ((value >= 40)&&(value < 41));
-        }
-        
-        /// <summary>
-        /// Следует использовать для преобразования числовых значений к перечислимому типу ColorType
-        /// </summary>
-        inline ColorType ConvertToColorType(const int value)
-        {
-          switch (value)
-          {
-            case 40:
-              return ColorType::Green;
-            case 30:
-              return ColorType::Red;
-            case 5:
-              return ColorType::Yellow;
-            default: throw KernelException("Невозможно преобразовать числовое значение %d к типу ColorType", value);
-            }
-        }
-        
-        #pragma endregion
-        
         //Структуры
         #pragma region Messages and wrappers
         
         //Сообщения
-        // Поставить модуль на паузу.
-        BEGIN_MESSAGE(Pause,2,0)
+        // Начать обратный отсчет для зелёного сигнала
+        BEGIN_MESSAGE(CountDownGreen,4,0)
           /// <summary>
           /// Инициализация сообщений
           /// </summary>
           void InitializeMessage()
           {
           }
-        END_MESSAGE(); // Pause
+        END_MESSAGE(); // CountDownGreen
+
+        // Начать обратный отсчет для красного сигнала
+        BEGIN_MESSAGE(CountDownRed,2,0)
+          /// <summary>
+          /// Инициализация сообщений
+          /// </summary>
+          void InitializeMessage()
+          {
+          }
+        END_MESSAGE(); // CountDownRed
+
+        // Начать обратный отсчет для жёлтого сигнала
+        BEGIN_MESSAGE(CountDownYellow,3,0)
+          /// <summary>
+          /// Инициализация сообщений
+          /// </summary>
+          void InitializeMessage()
+          {
+          }
+        END_MESSAGE(); // CountDownYellow
 
         // Следующая итерация цикла переключения сигнала светофора.
         BEGIN_MESSAGE(SetNextLight,1,0)
@@ -82,11 +64,27 @@ namespace Uniteller
         
         BEGIN_WRAPPER()
           /// <summary> 
-          /// Поставить модуль на паузу.
+          /// Начать обратный отсчет для зелёного сигнала
           /// </summary>
-          void Pause() const
+          void CountDownGreen() const
           {
-            m_RequestDispatcher->SendEvent(m_sModuleId.c_str(), G1::Codes::Pause);
+            m_RequestDispatcher->SendEvent(m_sModuleId.c_str(), G1::Codes::CountDownGreen);
+          }
+          
+          /// <summary> 
+          /// Начать обратный отсчет для красного сигнала
+          /// </summary>
+          void CountDownRed() const
+          {
+            m_RequestDispatcher->SendEvent(m_sModuleId.c_str(), G1::Codes::CountDownRed);
+          }
+          
+          /// <summary> 
+          /// Начать обратный отсчет для жёлтого сигнала
+          /// </summary>
+          void CountDownYellow() const
+          {
+            m_RequestDispatcher->SendEvent(m_sModuleId.c_str(), G1::Codes::CountDownYellow);
           }
           
           /// <summary> 
@@ -101,18 +99,48 @@ namespace Uniteller
         
         BEGIN_IMPLEMENTATION()
           /// <summary> 
-          /// Отправка события Pause по адресу
+          /// Отправка события CountDownGreen по адресу
           /// </summary>
-          void SendPause(address target)
+          void SendCountDownGreen(address target)
           {
-            m_RequestDispatcher->SendEvent(target, G1::Codes::Pause);
+            m_RequestDispatcher->SendEvent(target, G1::Codes::CountDownGreen);
           }
           /// <summary> 
-          /// Отправка события Pause самому себе
+          /// Отправка события CountDownGreen самому себе
           /// </summary>
-          void RaisePause()
+          void RaiseCountDownGreen()
           {
-            m_RequestDispatcher->SendEvent(m_sModuleId.c_str(), G1::Codes::Pause);
+            m_RequestDispatcher->SendEvent(m_sModuleId.c_str(), G1::Codes::CountDownGreen);
+          }
+          
+          /// <summary> 
+          /// Отправка события CountDownRed по адресу
+          /// </summary>
+          void SendCountDownRed(address target)
+          {
+            m_RequestDispatcher->SendEvent(target, G1::Codes::CountDownRed);
+          }
+          /// <summary> 
+          /// Отправка события CountDownRed самому себе
+          /// </summary>
+          void RaiseCountDownRed()
+          {
+            m_RequestDispatcher->SendEvent(m_sModuleId.c_str(), G1::Codes::CountDownRed);
+          }
+          
+          /// <summary> 
+          /// Отправка события CountDownYellow по адресу
+          /// </summary>
+          void SendCountDownYellow(address target)
+          {
+            m_RequestDispatcher->SendEvent(target, G1::Codes::CountDownYellow);
+          }
+          /// <summary> 
+          /// Отправка события CountDownYellow самому себе
+          /// </summary>
+          void RaiseCountDownYellow()
+          {
+            m_RequestDispatcher->SendEvent(m_sModuleId.c_str(), G1::Codes::CountDownYellow);
           }
           
           /// <summary> 
