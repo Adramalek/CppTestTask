@@ -14,84 +14,7 @@ namespace Uniteller
 {
 	namespace CrossroadController
 	{
-
-		Uniteller::DeviceController::Protocol::G1::ColorType ConvertColorType(const Protocol::G1::ColorType& color)
-		{
-			switch (color)
-			{
-			case Protocol::G1::ColorType::Red: return Uniteller::DeviceController::Protocol::G1::ColorType::Red;
-			case Protocol::G1::ColorType::Yellow: return Uniteller::DeviceController::Protocol::G1::ColorType::Yellow;
-			case Protocol::G1::ColorType::Green: return Uniteller::DeviceController::Protocol::G1::ColorType::Green;
-			default: throw  KernelException("No way. Never happens. Good luck to throw this exception.", color);
-			}
-		}
-
-#pragma region Timer implementation
-
-		Timer::Timer(int span) : _span(span)
-		{}
-
-		Timer::Timer(Timer&& other) :
-			_span(std::move(other._span)),
-			_callback(std::move(other._callback)),
-			_cancelationToken(std::move(other._cancelationToken)),
-			_completionFlag(std::move(other._completionFlag))
-		{}
-
-		Timer& Timer::operator=(Timer&& other)
-		{
-			if (this != &other)
-			{
-				this->_span = std::move(other._span);
-				this->_callback = std::move(other._callback);
-				this->_cancelationToken = std::move(other._cancelationToken);
-				this->_completionFlag = std::move(other._completionFlag);
-			}
-			return *this;
-		}
-
-		void Timer::operator()(uint16_t time)
-		{
-			this->_cancelationToken = std::promise<void>();
-			auto sptrPromise = std::make_shared<std::promise<void>>();
-			auto sptrCancelationToken = std::make_shared<std::future<void>>(this->_cancelationToken.get_future());
-			this->_completionFlag = sptrPromise->get_future();
-			std::thread([=](){
-				std::chrono::milliseconds delay(time * 1000);
-				std::chrono::high_resolution_clock::time_point start(std::chrono::high_resolution_clock::now());
-				bool is_time_left = true;
-				while ((sptrCancelationToken->wait_for(_span) == std::future_status::timeout) &&
-					(is_time_left = (std::chrono::high_resolution_clock::now() - start <= delay)));
-				if (_callback && !is_time_left)
-					_callback();
-				sptrPromise->set_value();
-			}).detach();
-		}
-
-		void Timer::SetCallback(const Timer::Callback& callback)
-		{
-			_callback = callback;
-		}
-
-		void Timer::SetCallback(Timer::Callback&& callback)
-		{
-			_callback = callback;
-		}
-
-		bool Timer::IsAlive()
-		{
-			return this->_completionFlag.valid() && this->_completionFlag.wait_for(std::chrono::microseconds(0)) != std::future_status::ready;
-		}
-
-		bool Timer::Stop()
-		{
-			if (!this->_completionFlag.valid()) return false;
-			_cancelationToken.set_value();
-			_completionFlag.get();
-			return true;
-		}
-
-#pragma endregion
+		
 #pragma region Machine implementation
 
 		Machine::~Machine()
@@ -101,9 +24,9 @@ namespace Uniteller
 
 		void Machine::Reset()
 		{
-			timer.IsAlive() && timer.Stop();
-			_increment = true;
 			_currentColor = _colorCycle;
+			_increment = true;
+			_turnignOnLight = false;
 		}
 
 		void Machine::Clear()
@@ -113,61 +36,105 @@ namespace Uniteller
 
 		void Machine::Init()
 		{
-			timer.SetCallback([this](){ m_Protocol.RaiseSetNextLight(); });
+			_colorCycle[0] = DCG1Protocol::ColorType::Red;
+			_colorCycle[1] = DCG1Protocol::ColorType::Yellow;
+			_colorCycle[2] = DCG1Protocol::ColorType::Green;
 			Reset();
+		}
+
+		void Machine::AdvanceCycle()
+		{
+			_turnignOnLight = false;
+			if (_increment && ++_currentColor == _colorCycle + _colorCycleSize)
+			{
+				--_currentColor;
+				_increment = !_increment;
+			}
+			else if (!_increment && _currentColor-- == _colorCycle)
+			{
+				_currentColor = _colorCycle;
+				_increment = !_increment;
+			}
 		}
 
 #pragma endregion
 #pragma region Обработчики сообщений
-        void Machine::KernelStartHandler(const Framework::Kernel::Protocol::G1::Start & message)
+        void Machine::KernelStartHandler(const KG1Protocol::Start&)
         {
 			Init();
         }
 
-		void Machine::MainLogicStartHandler(const Uniteller::MainLogic::Protocol::G1::Start& message)
+		void Machine::MainLogicStartHandler(const MLG1Protocol::Start&)
 		{
-			m_LedDriver.SetLight(ConvertColorType(*_currentColor));
+			m_Protocol.RaiseSetNextLight();
 		}
 		
-		void Machine::SetNextLightHandler(const Protocol::G1::SetNextLight& message)
+		void Machine::SetNextLightHandler(const CCG1Protocol::SetNextLight&)
 		{
-			m_LedDriver.SetLight(ConvertColorType(*_currentColor));
+			_turnignOnLight = true;
+			m_LedDriver.SetLight(*_currentColor);
 		}
 
-		void Machine::FailHandler(const Uniteller::DeviceController::Protocol::G1::Fail& message)
+		void Machine::FailHandler(const DCG1Protocol::Fail&)
 		{
 			Reset();
 			m_ControlLogic.ProblemDetected();
 		}
 
-		void Machine::TimeOutHandler(const Framework::Kernel::Protocol::G1::TimeOut& message)
+		void Machine::TimeOutHandler(const KG1Protocol::TimeOut&)
 		{
-			Reset();
-			m_ControlLogic.ProblemDetected();
-		}
-
-		void Machine::StopHandler(const Framework::Kernel::Protocol::G1::Stop& message)
-		{
-			Reset();
-		}
-
-		void Machine::ShutdownHandler(const Uniteller::MainLogic::Protocol::G1::Shutdown& message)
-		{
-			Reset();
-		}
-
-		void Machine::SuccessHandler(const Uniteller::DeviceController::Protocol::G1::Success& message)
-		{
-			timer(static_cast<int>(*_currentColor));
-			if (_increment && ++_currentColor == _colorCycle + _colorCycleSize)
+			if (_turnignOnLight)
 			{
-				_increment = !_increment;
-				--_currentColor;
+				Reset();
+				m_ControlLogic.ProblemDetected();
 			}
-			else if (!_increment && --_currentColor == _colorCycle)
+			else
 			{
-				this->_increment = !_increment;
+				m_Protocol.RaiseSetNextLight();
 			}
+		}
+
+		void Machine::StopHandler(const KG1Protocol::Stop&)
+		{
+			Reset();
+		}
+
+		void Machine::ShutdownHandler(const MLG1Protocol::Shutdown&)
+		{
+			Reset();
+		}
+
+		void Machine::SuccessHandler(const DCG1Protocol::Success&)
+		{
+			switch (*_currentColor)
+			{
+			case DCG1Protocol::ColorType::Red:
+				m_Protocol.RaiseCountDownRed();
+				break;
+			case DCG1Protocol::ColorType::Yellow:
+				m_Protocol.RaiseCountDownYellow();
+				break;
+			case DCG1Protocol::ColorType::Green:
+				m_Protocol.RaiseCountDownGreen();
+				break;
+			default:
+				break;
+			}
+		}
+
+		void Machine::CountDownRedHandler(const CCG1Protocol::CountDownRed&)
+		{
+			AdvanceCycle();
+		}
+
+		void Machine::CountDownYellowHandler(const CCG1Protocol::CountDownYellow&)
+		{
+			AdvanceCycle();
+		}
+
+		void Machine::CountDownGreenHandler(const CCG1Protocol::CountDownGreen&)
+		{
+			AdvanceCycle();
 		}
 
 #pragma endregion             

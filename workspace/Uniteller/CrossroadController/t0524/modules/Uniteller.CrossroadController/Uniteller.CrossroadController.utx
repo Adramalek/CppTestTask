@@ -22,32 +22,64 @@ Uniteller.CrossroadController
       IsEndState  : False ; Состояние не является конечным
       Transitions : 0     ; Переходы (без накопления событий)
         Kernel.Stop : End
-        MainLogic.Start : TurningLightOn
+        MainLogic.Shutdown : End
+        MainLogic.Start : Pause
+          CanRaise : 1    ; Ограничиваем события, которые могут быть сгенерированы модулем в момент перехода
+            CrossroadController.SetNextLight
+        CrossroadController.SetNextLight : LightTurningOn
           CanRaise : 1    ; Ограничиваем события, которые могут быть сгенерированы модулем в момент перехода
             DeviceController.SetLight
-        MainLogic.Shutdown : End
-    TurningLightOn
+    RedLight
+      IsEndState  : False ; Состояние не является конечным
+      TimeOut     : 30000 ; Максимальный интервал нахождения в данном состоянии
+      Transitions : 0     ; Переходы (без накопления событий)
+        Kernel.TimeOut : RedLight
+          CanRaise : 1    ; Ограничиваем события, которые могут быть сгенерированы модулем в момент перехода
+            CrossroadController.SetNextLight
+        CrossroadController.SetNextLight : LightTurningOn
+          CanRaise : 1    ; Ограничиваем события, которые могут быть сгенерированы модулем в момент перехода
+            DeviceController.SetLight
+        Kernel.Stop : End
+    YellowLight
+      IsEndState  : False ; Состояние не является конечным
+      TimeOut     : 5000 ; Максимальный интервал нахождения в данном состоянии
+      Transitions : 0     ; Переходы (без накопления событий)
+        Kernel.TimeOut : YellowLight
+          CanRaise : 1    ; Ограничиваем события, которые могут быть сгенерированы модулем в момент перехода
+            CrossroadController.SetNextLight
+        CrossroadController.SetNextLight : LightTurningOn
+          CanRaise : 1    ; Ограничиваем события, которые могут быть сгенерированы модулем в момент перехода
+            DeviceController.SetLight
+        Kernel.Stop : End
+    GreenLight
+      IsEndState  : False ; Состояние не является конечным
+      TimeOut     : 40000 ; Максимальный интервал нахождения в данном состоянии
+      Transitions : 0     ; Переходы (без накопления событий)
+        Kernel.TimeOut : GreenLight
+          CanRaise : 1    ; Ограничиваем события, которые могут быть сгенерированы модулем в момент перехода
+            CrossroadController.SetNextLight
+        CrossroadController.SetNextLight : LightTurningOn
+          CanRaise : 1    ; Ограничиваем события, которые могут быть сгенерированы модулем в момент перехода
+            DeviceController.SetLight
+        Kernel.Stop : End
+    LightTurningOn
       IsEndState  : False ; Состояние не является конечным
       TimeOut     : 100 ; Максимальный интервал нахождения в данном состоянии
       Transitions : 0     ; Переходы (без накопления событий)
         Kernel.TimeOut : Pause
           CanRaise : 1    ; Ограничиваем события, которые могут быть сгенерированы модулем в момент перехода
             MainLogic.ProblemDetected
-        DeviceController.Success : LightTurnedOn
-        Kernel.Stop : End
-        Kernel.Stop : End
-        MainLogic.Shutdown : End
-        MainLogic.Shutdown : End
         DeviceController.Fail : Pause
           CanRaise : 1    ; Ограничиваем события, которые могут быть сгенерированы модулем в момент перехода
             MainLogic.ProblemDetected
-    LightTurnedOn
-      IsEndState  : False ; Состояние не является конечным
-      Transitions : 0     ; Переходы (без накопления событий)
-        CrossroadController.SetNextLight : TurningLightOn
+        DeviceController.Success : LightTurningOn
           CanRaise : 1    ; Ограничиваем события, которые могут быть сгенерированы модулем в момент перехода
-            DeviceController.SetLight
+            CrossroadController.CountDownRed
+            CrossroadController.CountDownYellow
+            CrossroadController.CountDownGreen
         Kernel.Stop : End
-        MainLogic.Shutdown : End
+        CrossroadController.CountDownRed : RedLight
+        CrossroadController.CountDownYellow : YellowLight
+        CrossroadController.CountDownGreen : GreenLight
   Options                 ; Настройки машины
     StartState : StartState
