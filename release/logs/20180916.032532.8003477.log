@@ -1,0 +1,17 @@
+Start logging action: Converting
+File: C:\Users\User\CppTestTask\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\Uniteller.CrossroadController.utx
+Parameter: 
+
+[CORE] META-CORE
+Version : 1.0.1
+
+[HOST] Анализ параметров командной строки
+                                                                          [ OK ]
+[HOST] Инициализация приложения CONVERTER
+
+                                                                          [ OK ]
+
+[CONVERTER] Обрабатываем модель:
+  C:\Users\User\CppTestTask\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.CrossroadController\statemachine.vsd
+[CONVERTER] Экспорт: Uniteller.CrossroadController
+

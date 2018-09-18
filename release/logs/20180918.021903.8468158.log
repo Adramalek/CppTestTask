@@ -1,0 +1,27 @@
+Start logging action: Converting
+File: C:\Users\User\CppTestTask\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.InterchangeFormats.CrossroadController\protocol.utx
+Parameter: 
+
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+
+
+[HOST] Loading core..[14:19:03.943]
+[HOST] Starting application..[14:19:03.947]
+[HOST] Application started successfully.[14:19:03.958]
+[GENERATOR] Анализ параметров командной строки[ OK ]
+[GENERATOR] Loading: C:\Users\User\CppTestTask\workspace\Uniteller\CrossroadController\t0524\modules\Uniteller.InterchangeFormats.CrossroadController\protocol.utx[ OK ]
+[GENERATOR] Parsing UniText format[ OK ]
+Блоков 1
+[GENERATOR] Анализ блока 0[ OK ]
+Переход к следующему протоколу
+Экспорт протокола
+Экспорт Uniteller.CrossroadController
+Закрытие файла
+Файл сохранен
+Переход к следующему протоколу
+Экспорт протокола
+[HOST] Unloading core..[14:19:04.655]
+[HOST] Exit with code 0[14:19:04.662]
+
