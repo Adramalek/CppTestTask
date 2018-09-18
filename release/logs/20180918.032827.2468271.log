@@ -1,0 +1,26 @@
+Start logging action: Execute
+File: C:\Users\User\CppTestTask\workspace\Uniteller\CrossroadController\t0524\tests\auto\Âûãðóçêà\check_CountDownRed.utx
+Parameter: Default
+
+[CORE] Uniteller.Framework.Kernel : Standard Console Host
+       Version    : 1.0.2
+       Generation : 1
+
+
+[HOST] Loading core..[15:28:27.310]
+[HOST] Starting application..[15:28:27.313]
+[HOST] Application started successfully.[15:28:27.325]
+[TESTER] Loading:C:\Users\User\CppTestTask\workspace\Uniteller\CrossroadController\t0524\tests\auto\Âûãðóçêà\check_CountDownRed.utx
+                                                            [15:28:27.353]
+[TESTER] Checking test script.                              [15:28:27.354]
+[TESTER] Loading modules for test.                          [15:28:27.355]
+······································································ 0%
+[TESTER] Loading Uniteller.CrossroadController as Crossroad, generation: 1
+                                                            [15:28:27.355]
+[FAIL] Module or one of it dependency could not be loaded: Uniteller.CrossroadController
+                                                            [15:28:27.357]
+  - exception : Íå óäàëîñü çàãðóçèòü ìîäóëü Uniteller.InterchangeFormats.CrossroadController. Êîä ïðîáëåìû 2.
+[FATAL] [15:28:27.560]
+[HOST] Unloading core..[15:28:27.560]
+[HOST] Exit with code 15[15:28:27.581]
+

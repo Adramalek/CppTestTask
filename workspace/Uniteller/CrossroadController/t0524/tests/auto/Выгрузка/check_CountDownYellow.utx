@@ -4,20 +4,20 @@ Modules
     Generation : 1
 Script
   1 : Send <Crossroad>
-    Uniteller.InterchangeFormats.Kernel.Start : 1
+    Kernel.Start : 1
   2 : Send <Crossroad>
-    Uniteller.InterchangeFormats.MainLogic.Start : 1
+    MainLogic.Start : 1
   3 : Receive <Crossroad>
-    Uniteller.InterchangeFormats.DeviceController.SetLight : 1
-      Color : Uniteller.InterchangeFormats.DeviceController.ColorType.Red
+    DeviceController.SetLight : 1
+      Color : DeviceController.ColorType.Red
   4 : Send <Crossroad>
-    Uniteller.InterchangeFormats.DeviceController.Success : 1
+    DeviceController.Success : 1
   5 : Send <Crossroad>, 1000
-    Uniteller.InterchangeFormats.Kernel.TimeOut : 1
+    Kernel.TimeOut : 1
   6 : Receive <Crossroad>
-    Uniteller.InterchangeFormats.DeviceController.SetLight : 1
-      Color : Uniteller.InterchangeFormats.DeviceController.ColorType.Yellow
+    DeviceController.SetLight : 1
+      Color : DeviceController.ColorType.Yellow
   7 : Send <Crossroad>
-    Uniteller.InterchangeFormats.DeviceController.Success : 1
+    DeviceController.Success : 1
   8 : Send <Crossroad>, 1000
-    Uniteller.InterchangeFormats.Kernel.Stop : 1
+    Kernel.Stop : 1

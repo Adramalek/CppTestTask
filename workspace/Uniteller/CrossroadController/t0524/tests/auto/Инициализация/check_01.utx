@@ -4,6 +4,6 @@ Modules
     Generation : 1
 Script
   1 : Send <Crossroad>
-    Uniteller.InterchangeFormats.Kernel.Start : 1
+    Kernel.Start : 1
   2 : Send <Crossroad>
-    Uniteller.InterchangeFormats.Kernel.Stop : 1
+    Kernel.Stop : 1

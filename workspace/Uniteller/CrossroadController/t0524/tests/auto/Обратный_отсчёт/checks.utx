@@ -5,42 +5,42 @@ Modules
     Generation : 1
 Script
   1 : Send <Crossroad>
-    Uniteller.InterchangeFormats.Kernel.Start : 1
+    Kernel.Start : 1
   2 : Send <Crossroad>
-    Uniteller.InterchangeFormats.MainLogic.Start : 1
+    MainLogic.Start : 1
   3 : Receive <Crossroad>
-    Uniteller.InterchangeFormats.DeviceController.SetLight : 1
-      Color : Uniteller.InterchangeFormats.DeviceController.ColorType.Red
+    DeviceController.SetLight : 1
+      Color : DeviceController.ColorType.Red
   4 : Send  <Crossroad>
-    Uniteller.InterchangeFormats.DeviceController.Success : 1
+    DeviceController.Success : 1
   5 : Send <Crossroad>, 30000
-    Uniteller.InterchangeFormats.Kernel.TimeOut : 1
+    Kernel.TimeOut : 1
   6 : Receive <Crossroad>
-    Uniteller.InterchangeFormats.DeviceController.SetLight : 1
-      Color : Uniteller.InterchangeFormats.DeviceController.ColorType.Yellow
+    DeviceController.SetLight : 1
+      Color : DeviceController.ColorType.Yellow
     7 : Send  <Crossroad>
-    Uniteller.InterchangeFormats.DeviceController.Success : 1
+    DeviceController.Success : 1
   8 : Send <Crossroad>, 5000
-    Uniteller.InterchangeFormats.Kernel.TimeOut : 1
+    Kernel.TimeOut : 1
   9 : Receive <Crossroad>
-    Uniteller.InterchangeFormats.DeviceController.SetLight : 1
-      Color : Uniteller.InterchangeFormats.DeviceController.ColorType.Green
+    DeviceController.SetLight : 1
+      Color : DeviceController.ColorType.Green
   10 : Send  <Crossroad>
-    Uniteller.InterchangeFormats.DeviceController.Success : 1
+    DeviceController.Success : 1
   11 : Send <Crossroad>, 40000
-    Uniteller.InterchangeFormats.Kernel.TimeOut : 1
+    Kernel.TimeOut : 1
   12 : Receive <Crossroad>
-    Uniteller.InterchangeFormats.DeviceController.SetLight
-      Color : Uniteller.InterchangeFormats.DeviceController.ColorType.Yellow
+    DeviceController.SetLight
+      Color : DeviceController.ColorType.Yellow
     13 : Send  <Crossroad>
-    Uniteller.InterchangeFormats.DeviceController.Success : 1
+    DeviceController.Success : 1
   14 : Send <Crossroad>, 5000
-    Uniteller.InterchangeFormats.Kernel.TimeOut : 1
+    Kernel.TimeOut : 1
   15 : Receive <Crossroad>
-    Uniteller.InterchangeFormats.DeviceController.SetLight : 1
-      Color : Uniteller.InterchangeFormats.DeviceController.ColorType.Red
+    DeviceController.SetLight : 1
+      Color : DeviceController.ColorType.Red
   16 : Send  <Crossroad>
-    Uniteller.InterchangeFormats.DeviceController.Fail : 1
+    DeviceController.Fail : 1
   17 : Send <Crossroad>
-    Uniteller.InterchangeFormats.MainLogic.Shutdown : 1
+    MainLogic.Shutdown : 1
 
